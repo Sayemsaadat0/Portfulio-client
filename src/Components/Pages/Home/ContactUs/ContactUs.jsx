@@ -11,11 +11,15 @@ const ContactUs = () => {
                 <div className="lg:flex  justify-between ">
 
                     {/* left side */}
-                    <div className="flex flex-col">
+                    <div className="flex flex-col  p-5">
+                        <div>
+                            <h3 className="text-center font-bold text-xl">Send A Message</h3>
+                        </div>
 
                         <form onSubmit={handleSubmit(onSubmit)}>
 
-                            <div className="lg:flex gap-10">
+                            <div className="lg:flex gap-5">
+                                {/* Name */}
                                 <div>
                                     <label className="label">
                                         <span className="label-text">
@@ -23,42 +27,58 @@ const ContactUs = () => {
                                         </span>
                                     </label>
                                     <input
-                                        className="input border-black"
+                                        className="input border-black w-full shadow-md shadow-black"
                                         type="text"
-                                        placeholder="yourname"
+                                        placeholder="Enter Your Name"
                                         {...register("yourname", { required: true })} />
                                 </div>
+                                {/* email */}
                                 <div>
                                     <label className="label">
                                         <span className="label-text">
-                                            Your Name
+                                            Email
                                         </span>
                                     </label>
                                     <input
-                                        className="input border-black"
-                                        type="text"
-                                        placeholder="yourname"
-                                        {...register("yourname", { required: true })} />
+                                        className="input border-black w-full shadow-md shadow-black"
+                                        type="email"
+                                        placeholder=" Enter Your Email"
+                                        {...register("email", { required: true })} />
                                 </div>
-
-
-
+                            </div>
+                            {/* subject */}
+                            <div>
+                                <label className="label">
+                                    <span className="label-text">
+                                    Subject
+                                    </span>
+                                </label>
+                                <input
+                                    className="input border-black w-full shadow-md shadow-black"
+                                    type="Subject"
+                                    placeholder="Subject of Message"
+                                    {...register("Subject", { required: true })} />
+                            </div>
+                            {/* textarea */}
+                            <div>
+                            <label className="label">
+                                    <span className="label-text">
+                                    Message
+                                    </span>
+                                </label>
+                                <textarea 
+                                className="textarea  border-black w-full shadow-md shadow-black" 
+                                placeholder="Message"></textarea>
                             </div>
 
-                            <div>
-                                <input type="text" placeholder="First name" {...register("First name", { required: true, maxLength: 80 })} />
-                            </div>
-
-                            <div>
-                                <input type="text" placeholder="First name" {...register("First name", { required: true, maxLength: 80 })} />
-                            </div>
-
-                            <div>
-                                <textarea className="textarea textarea-bordered" placeholder="Bio"></textarea>
+                            <div className="flex justify-center mt-4">
+                                <button 
+                                className="hover:underline hover:scale-105 duration-300 hover:font-semi-bold p-2
+                                bg-black text-white hover:bg-white  hover:text-black w-full"
+                                type="submit">Submit</button>
                             </div>
 
                         </form>
-
 
                     </div>
                     {/* right side */}
