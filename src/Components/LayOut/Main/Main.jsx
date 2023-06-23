@@ -4,7 +4,7 @@ import Footar from "../../Pages/Shared/Footar/Footar";
 
 const Main = () => {
     return (
-        <div>
+        <div className="font-mono">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footar></Footar>

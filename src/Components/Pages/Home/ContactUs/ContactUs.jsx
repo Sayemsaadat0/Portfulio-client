@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
-
+import {FaFacebook , FaGithub , FaLinkedinIn} from "react-icons/fa"
+import { Link } from "react-router-dom";
 const ContactUs = () => {
     const { register, handleSubmit,reset, formState: { errors } } = useForm();
     const onSubmit = data => {
@@ -9,8 +10,8 @@ const ContactUs = () => {
     console.log(errors);
     return (
       
-            <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10">
-                <div className="lg:flex  justify-between ">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10 border">
+                <div className="lg:flex ">
 
                     {/* left side */}
                     <div className="flex flex-col  p-5">
@@ -84,17 +85,43 @@ const ContactUs = () => {
 
                     </div>
                     {/* right side */}
-                    <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col">
-                        <img className="ms-10 w-60" src="https://i.ibb.co/djft9Sf/3.png" alt="" />
+                    <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col items-center text-center font-bold text-xl mt-4">
+                        <img className="ms-10 w-60" src="https://i.ibb.co/djft9Sf/3.png" alt="" /> 
+                        <h4 className="mt-4 uppercase text-2xl">Get in touch</h4>
+                        <p className="mt-2">Hey! we are looking forward to sartt a project with you! <br />
+                        Feel free to reach out!</p> 
+
+                        <p className="font-md mt-5">Name<br />
+                         Sayem Saadat
+                         </p>
+                        <p className="font-md mt-5">Location<br />
+                         Naogaon,Bangladesh
+                         </p>
+                        <p className="font-md mt-5">Email<br />
+                         sayemsaadat0@gmail.com
+                         </p>
+                        <p className="font-md mt-5">Phone No.<br />
+                         +8801521574741
+                         </p>
+
                     </div>
                 </div>
 
 
                 {/* bottom links */}
-                <div className="flex justify-center mt-10 gap-10">
-                    <p>pup</p>
-                    <p>pup</p>
-                    <p>pup</p>
+                <div className="flex justify-center mt-10 gap-10 text-5xl">
+                    <Link>
+                    <FaFacebook className="hover:scale-110 duration-300"></FaFacebook>
+                    </Link>
+                    
+                    <Link>
+                    <FaGithub className="hover:scale-110 duration-300"></FaGithub> 
+                    </Link>
+                    
+                    <Link>
+                    <FaLinkedinIn className="hover:scale-110 duration-300"></FaLinkedinIn>
+                    </Link>
+             
                 </div>
             </div>
     
