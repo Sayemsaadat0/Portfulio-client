@@ -1,8 +1,6 @@
-import { Slide } from "react-awesome-reveal";
 
 const Service = () => {
     return (
-        <Slide direction="up">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10 ">
                 <div className="lg:flex justify-between ">
                     <div className="w-full md:w-full lg:w-[50%] ">
@@ -35,7 +33,6 @@ const Service = () => {
                     </div>
                 </div>
             </div>
-        </Slide>
     );
 };
 

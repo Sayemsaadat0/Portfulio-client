@@ -1,9 +1,7 @@
 import Marquee from "react-fast-marquee";
-import { Slide } from "react-awesome-reveal";
 
 const MySkills = () => {
     return (
-        <Slide direction="down">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10">
                 <div className="flex justify-center">
                     <img className="ms-10" src="https://i.ibb.co/JnpzjMc/Service-I-Offer.png" alt="" />
@@ -23,7 +21,6 @@ const MySkills = () => {
                     </Marquee>
                 </div>
             </div>
-        </Slide>
     );
 };
 

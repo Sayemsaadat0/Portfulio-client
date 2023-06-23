@@ -12,3 +12,13 @@
   background: #ffffff;
   box-shadow: 5px -5px 10px #5a5a5a, -5px 5px 10px #ffffff;
 }
+
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

@@ -1,12 +1,14 @@
-import { Slide } from "react-awesome-reveal";
 import { useForm } from "react-hook-form";
 
 const ContactUs = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset, formState: { errors } } = useForm();
+    const onSubmit = data => {
+        console.log(data) 
+        reset()
+    };
     console.log(errors);
     return (
-        <Slide direction="up">
+      
             <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10">
                 <div className="lg:flex  justify-between ">
 
@@ -82,8 +84,8 @@ const ContactUs = () => {
 
                     </div>
                     {/* right side */}
-                    <div className="w-full md:w-full lg:w-[50%] mx-auto">
-                        <img className="ms-10" src="https://i.ibb.co/djft9Sf/3.png" alt="" />
+                    <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col">
+                        <img className="ms-10 w-60" src="https://i.ibb.co/djft9Sf/3.png" alt="" />
                     </div>
                 </div>
 
@@ -95,7 +97,7 @@ const ContactUs = () => {
                     <p>pup</p>
                 </div>
             </div>
-        </Slide>
+    
     );
 };
 
