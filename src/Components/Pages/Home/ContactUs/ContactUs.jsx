@@ -10,7 +10,7 @@ const ContactUs = () => {
     console.log(errors);
     return (
       
-            <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10 border">
+            <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10 ">
                 <div className="lg:flex ">
 
                     {/* left side */}
@@ -88,7 +88,7 @@ const ContactUs = () => {
                     <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col items-center text-center font-bold text-xl mt-4">
                         <img className="ms-10 w-60" src="https://i.ibb.co/djft9Sf/3.png" alt="" /> 
                         <h4 className="mt-4 uppercase text-2xl">Get in touch</h4>
-                        <p className="mt-2">Hey! we are looking forward to sartt a project with you! <br />
+                        <p className="mt-2">Hey! we are looking forward to start a project with you! <br />
                         Feel free to reach out!</p> 
 
                         <p className="font-md mt-5">Name<br />
