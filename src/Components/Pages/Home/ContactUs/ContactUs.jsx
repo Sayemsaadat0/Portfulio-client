@@ -76,8 +76,7 @@ const ContactUs = () => {
 
                             <div className="flex justify-center mt-4">
                                 <button 
-                                className="hover:underline hover:scale-105 duration-300 hover:font-semi-bold p-2
-                                bg-black text-white hover:bg-white  hover:text-black w-full"
+                                className="s_button w-full"
                                 type="submit">Submit</button>
                             </div>
 
@@ -109,17 +108,26 @@ const ContactUs = () => {
 
 
                 {/* bottom links */}
-                <div className="flex justify-center mt-10 gap-10 text-5xl">
-                    <Link>
-                    <FaFacebook className="hover:scale-110 duration-300"></FaFacebook>
+                <div className="flex justify-center mt-10 gap-10 text-5xl social-links">
+                    <Link 
+                    className="social-btn flex-center">
+                    <FaFacebook></FaFacebook>
+                    <span 
+                    className="text-sm">Facebook</span>
                     </Link>
                     
-                    <Link>
-                    <FaGithub className="hover:scale-110 duration-300"></FaGithub> 
+                    <Link 
+                    className="social-btn flex-center">
+                    <FaGithub></FaGithub> 
+                    <span 
+                    className="text-sm">Github</span>
                     </Link>
                     
-                    <Link>
-                    <FaLinkedinIn className="hover:scale-110 duration-300"></FaLinkedinIn>
+                    <Link 
+                    className="social-btn flex-center">
+                    <FaLinkedinIn></FaLinkedinIn>
+                    <span 
+                    className="text-sm">Linkdin</span>
                     </Link>
              
                 </div>

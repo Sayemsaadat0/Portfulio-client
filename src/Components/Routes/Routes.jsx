@@ -8,15 +8,15 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        errorElement : <ErrorPage> </ErrorPage>,
-        children : [
+        errorElement: <ErrorPage> </ErrorPage>,
+        children: [
             {
-                path : '/',
-                element : <Home></Home>
+                path: '/',
+                element: <Home></Home>
             },
             {
-                path : 'aboutme',
-                element : <AboutMe></AboutMe>
+                path: 'aboutme',
+                element: <AboutMe></AboutMe>
             }
         ]
 
@@ -25,3 +25,40 @@ const router = createBrowserRouter([
 
 
 export default router
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+   <Link  to='/'
+      className="hover:underline hover:scale-105 
+      duration-300 hover:font-semi-bold 
+      p-2 bg-black text-white hover:bg-white
+     hover:text-black">Home</Link>
+
+      <Link  to='/aboutme'
+      className="hover:underline hover:scale-105 
+      duration-300 hover:font-semi-bold 
+      p-2 bg-black text-white hover:bg-white
+     hover:text-black">About Me</Link>
+    
+      <Link className="hover:underline hover:scale-105 duration-300 hover:font-semi-bold p-2
+      bg-black text-white hover:bg-white  hover:text-black">Projects</Link>
+    
+      <Link className="hover:underline hover:scale-105 duration-300 hover:font-semi-bold  p-2
+      bg-black text-white hover:bg-white  hover:text-black">Download Resume</Link>
+*/

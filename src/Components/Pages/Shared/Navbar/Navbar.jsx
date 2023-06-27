@@ -3,24 +3,18 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
-    const navOptions = <div className="flex flex-col sm:flex-row gap-2 sm:gap-10 ">
+    const navOptions = <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 ">
       <Link  to='/'
-      className="hover:underline hover:scale-105 
-      duration-300 hover:font-semi-bold 
-      p-2 bg-black text-white hover:bg-white
-     hover:text-black">Home</Link>
+      className="s_button">Home</Link>
 
       <Link  to='/aboutme'
-      className="hover:underline hover:scale-105 
-      duration-300 hover:font-semi-bold 
-      p-2 bg-black text-white hover:bg-white
-     hover:text-black">About Me</Link>
+      className="s_button">About Me</Link>
     
-      <Link className="hover:underline hover:scale-105 duration-300 hover:font-semi-bold p-2
-      bg-black text-white hover:bg-white  hover:text-black">Projects</Link>
+      <Link 
+      className="s_button">Projects</Link>
     
-      <Link className="hover:underline hover:scale-105 duration-300 hover:font-semi-bold  p-2
-      bg-black text-white hover:bg-white  hover:text-black">Testimonials</Link>
+      <button 
+      className="s_button">Download Resume</button>
     </div>
 
 
@@ -30,7 +24,7 @@ const Navbar = () => {
                 <div>
                     <div className="flex items-center justify-between py-3 md:block">
                      
-                     <Link to='/'> <img className="hover:scale-125 duration-500"  width={100}  src="https://i.ibb.co/ZNtHD6C/logo.png" alt="" /></Link>
+                     <Link to='/'> <img className="hover:scale-125 duration-500"  width={100}  src="https://i.ibb.co/vDdQ6jY/logo2.png" alt="" /></Link>
                    
                         <div className="md:hidden">
                             <button
