@@ -4,9 +4,7 @@ const ErrorPage = () => {
     return (
         <Container>
             <div className="flex justify-center h-screen">
-
-            {/* <img src="https://i.ibb.co/HxCLv3x/portfulio-2.gif" alt="" /> */}
-            <img src="https://i.ibb.co/RzbyfgV/portfulio-3.gif" alt="" />
+            <img src="https://i.ibb.co/hMbnNYF/portfulio-2.png" alt="" />
             </div>
         </Container>
     );

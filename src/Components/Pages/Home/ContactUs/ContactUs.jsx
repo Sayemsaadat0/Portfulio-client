@@ -43,7 +43,7 @@ const ContactUs = () => {
                         <h3 className="text-center font-bold text-xl">Send A Message</h3>
                     </div>
 
-                    <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+                    <form  className="mb-5 text-black" ref={form} onSubmit={handleSubmit(onSubmit)}>
 
                         <div className="lg:flex gap-5">
                             {/* Name */}
@@ -54,7 +54,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input border-black w-full shadow-md shadow-black"
+                                    className="input border-white w-full shadow-md shadow-white"
                                     type="text"
                                     name="name"
                                     placeholder="Enter Your Name"
@@ -68,7 +68,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input border-black w-full shadow-md shadow-black"
+                                    className="input border-white w-full shadow-md shadow-white"
                                     type="email"
                                     name="email"
                                     placeholder=" Enter Your Email"
@@ -83,7 +83,7 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <input
-                                className="input border-black w-full shadow-md shadow-black"
+                                className="input border-white w-full shadow-md shadow-white"
                                 type="text"
                                 name="subject"
                                 placeholder="Subject of Message"
@@ -97,22 +97,24 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <textarea
-                                className="textarea  border-black w-full shadow-md shadow-black"
+                                className="textarea h-44  border-white w-full shadow-md shadow-white"
                                 name="message"
                                 placeholder="Message"
                                 {...register("message", { required: true })}></textarea>
                         </div>
 
-                        <div className="flex justify-center mt-4">
+                        <div className="flex justify-center mt-4 ">
                             <button
-                                className="s_button w-full"
+                                className="s_button w-full text-white"
                                 type="submit">Submit</button>
                         </div>
 
                     </form>
-                    {
-                        success && "Your message has been sent. We'll get back to you soon"
+                   <p className="mt-5">
+                   {
+                        success && "Your message has been sent. We'll get back to you soon!"
                     }
+                   </p>
                 </div>
                 {/* right side */}
                 <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col items-center text-center font-bold text-xl mt-4">

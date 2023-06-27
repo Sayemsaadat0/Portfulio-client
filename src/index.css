@@ -13,7 +13,8 @@
 /* card */
 .service_card {
   border-radius: 19px;
-  background: #ffffff;
+  background: #000000;
+  color: white;
   box-shadow: 5px -5px 10px #5a5a5a, -5px 5px 10px #ffffff;
 }
 
@@ -34,7 +35,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 2px 1px  8px #000000, 1px 1px 1px #b4abab;
+  box-shadow: 2px 1px  8px #ffffff, 1px 1px 1px #b4abab;
 }
 
 .s_button::before {
@@ -45,14 +46,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #000000 0%, #000000 100%);
+  background-image: linear-gradient(to right, #f2f2f2 0%, #ffffff 100%);
   transition: 0.5s ease;
   display: block;
   z-index: -1;
 }
 
 .s_button:hover {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .s_button:hover::before {
@@ -98,8 +99,7 @@
 .social-btn:hover {
   width: 150px;
   border-radius: 5px; 
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 254, 254);
 }
 
 .social-btn:hover span {
@@ -126,8 +126,8 @@
   height: 120px;
   border-radius: 20px;
   transition: all .5s ease-in-out; 
-  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-             -15px -15px 30px rgba(60, 60, 60, 0.082);
+  box-shadow: 15px 15px 30px rgba(255, 255, 255, 0.4),
+             -15px -15px 30px rgba(255, 255, 255, 0.1);
   text-align: center;
   overflow: hidden;
   position: relative;

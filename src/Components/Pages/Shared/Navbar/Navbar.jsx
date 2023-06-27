@@ -24,7 +24,7 @@ const Navbar = () => {
                 <div>
                     <div className="flex items-center justify-between py-3 md:block">
                      
-                     <Link to='/'> <img className="hover:scale-125 duration-500"  width={100}  src="https://i.ibb.co/vDdQ6jY/logo2.png" alt="" /></Link>
+                     <Link to='/'> <img className="hover:scale-125 duration-500"  width={80}  src="https://i.ibb.co/tc9PN8j/Untitled-design-4.png" alt="" /></Link>
                    
                         <div className="md:hidden">
                             <button

@@ -10,29 +10,29 @@ const Service = () => {
                     <h3 className=" text-4xl font-bold  underline uppercase ">Service I offer</h3>
                     <p className=" mt-5   lg:w-[80%] mb-5">--- As a front-end designer with expertise in HTML, CSS, JavaScript, React, Express, Node, and various frameworks, I offer a range of services aimed at delivering exceptional user experiences. Here is a breakdown of the services I provide:</p>
 
-                    <img src="https://i.ibb.co/r3snP7k/Untitled-design.gif" alt="" />
+                    <img  src="https://i.ibb.co/p2P5jNj/Untitled-design-2.gif" alt="" />
                 </div>
 
                 {/* right */}
 
                 <div className="lg:grid grid-cols-2 w-full lg:w-1/2 gap-10 mt-5 lg:ms-5 mx-auto ">
                     <div 
-                       className="card service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 hover:bg-black hover:text-white duration-500">
+                       className="card service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 ">
                         <h3 className="text-3xl font-bold ms-5">Front-End Development</h3>
                         <p className="ms-5 mt-4">---With a deep understanding of JavaScript and front-end frameworks like React, I transform designs into fully functional and interactive web applications..</p>
                     </div>
 
-                    <div className="card  w-[80%] md:w-full mx-auto service_card h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 hover:bg-black hover:text-white duration-500">
+                    <div className="card  w-[80%] md:w-full mx-auto service_card h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 ">
                         <h3 className="text-3xl font-bold ms-5">User Interface (UI) Design</h3>
                         <p className="ms-5 mt-4">---Through meticulous attention to typography, color palettes, and layout, I design interfaces that are not only aesthetically pleasing but also enhance usability and overall user satisfaction.</p>
                     </div>
 
-                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 hover:bg-black hover:text-white duration-500">
+                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 ">
                         <h3 className="text-3xl font-bold ms-5">Responsive Web Design</h3>
                         <p className="ms-5 mt-4">---Harnessing the power of HTML, CSS, and JavaScript, I create visually appealing and fully responsive websites.</p>
                     </div>
 
-                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 hover:bg-black hover:text-white duration-500">
+                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 ">
                         <h3 className="text-3xl font-bold ms-5">Website Maintenance <br /> and Support</h3>
                         <p className="ms-5 mt-4">---From bug fixes to content updates, I am dedicated to keeping your website running smoothly.</p>
                     </div>

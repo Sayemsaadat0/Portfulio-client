@@ -4,14 +4,14 @@ const AboutMe = () => {
     return (
         <div className="max-w-[1440px] h-full mx-auto">
          <Slide direction="right">
-         <img className="w-full" src="https://i.ibb.co/r23F8xt/About-Me-2.gif" alt="" />
+         <img className="w-full" src="https://i.ibb.co/Y2YdZfv/About-Me-3.gif" alt="" />
          </Slide>
 
             {/* CARD  */}
             <Slide>
             <div className="card  mx-auto lg:card-side   mt-20 mb-10 ">
                 <div className="lg:w-1/3">
-                    <img className="h-96  mx-auto " src="https://i.ibb.co/ynbQQbc/Untitled-design-3.png" alt="Album" />
+                    <img className="h-96  mx-auto " src="https://i.ibb.co/N343QgG/Untitled-design-5.png" alt="Album" />
                 </div>
                 
                     <div className="card-body lg:w-2/3">
