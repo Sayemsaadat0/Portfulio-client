@@ -33,7 +33,7 @@ const ContactUs = () => {
                                         className="input border-black w-full shadow-md shadow-black"
                                         type="text"
                                         placeholder="Enter Your Name"
-                                        {...register("yourname", { required: true })} />
+                                        {...register("name", { required: true })} />
                                 </div>
                                 {/* email */}
                                 <div>
@@ -85,7 +85,7 @@ const ContactUs = () => {
                     </div>
                     {/* right side */}
                     <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col items-center text-center font-bold text-xl mt-4">
-                        <img className="ms-10 w-60" src="https://i.ibb.co/djft9Sf/3.png" alt="" /> 
+                    <h3 className="text-center text-4xl font-bold underline uppercase">contact us</h3>
                         <h4 className="mt-4 uppercase text-2xl">Get in touch</h4>
                         <p className="mt-2">Hey! we are looking forward to start a project with you! <br />
                         Feel free to reach out!</p> 

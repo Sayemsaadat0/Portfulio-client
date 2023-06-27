@@ -3,7 +3,7 @@ const Skills = () => {
     return (
         <Container>
             <div className="mt-20 max-w-[1440px] h-full mx-auto ">
-                <h3 className="text-center text-4xl font-bold">Stuff I am Good at!</h3>
+                <h3 className="text-center text-4xl font-bold underline uppercase">Stuff I am Good at!</h3>
 
                 <div className=" grid grid-cols-2  lg:grid-cols-4 gap-20 mt-20 font-bold">
                     <div className="skill card1">

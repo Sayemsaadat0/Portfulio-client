@@ -19,8 +19,8 @@ const Navbar = () => {
 
 
     return (
-        <nav className="max-w-[2520px] mx-auto mt-2">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <nav className="max-w-[1440px] mx-auto mt-2">
+            <div className="justify-between px-4 mx-auto  md:items-center md:flex ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:block">
                      
@@ -28,7 +28,7 @@ const Navbar = () => {
                    
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className=" text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (

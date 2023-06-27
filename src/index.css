@@ -58,17 +58,17 @@
 .s_button:hover::before {
   width: 32em;
 }
-
+/* 
 ::-webkit-scrollbar {
-  width: 0;
+  width: 4px;
   background-color: gray;
   border-radius: 10px;
-}
+} */
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background-color: transparent;
   scroll-behavior: smooth;
-}
+} */
 
 
 
@@ -122,14 +122,6 @@
 /* animation */
 .card1{
   animation: animate 1s infinite ease alternate
-}
-@keyframes animate {
-  to {
-    transform: translateY(20px);
-  }
-}
-.card2{
-  animation: animate 2s infinite ease alternate
 }
 @keyframes animate {
   to {

@@ -1,11 +1,11 @@
 
 const Service = () => {
     return (
-        <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10 ">
+        <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10h-screen">
             <div className="lg:flex justify-between ">
                 <div className="w-full md:w-full lg:w-[50%] ">
-                    <img className="ms-10" src="https://i.ibb.co/HBs56CS/1.png" alt="" />
-                    <p className="ms-10 mt-5  w-[70%] lg:w-[70%] mb-5">--- As a front-end designer with expertise in HTML, CSS, JavaScript, React, Express, Node, and various frameworks, I offer a range of services aimed at delivering exceptional user experiences. Here is a breakdown of the services I provide:</p>
+                    <h3 className=" text-4xl font-bold  underline  ">Service I offer</h3>
+                    <p className=" mt-5   lg:w-[80%] mb-5">--- As a front-end designer with expertise in HTML, CSS, JavaScript, React, Express, Node, and various frameworks, I offer a range of services aimed at delivering exceptional user experiences. Here is a breakdown of the services I provide:</p>
 
                     <img src="https://i.ibb.co/r3snP7k/Untitled-design.gif" alt="" />
                 </div>
