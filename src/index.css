@@ -34,7 +34,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 2px 1px  8px #060606, 1px 1px 1px #b4abab;
+  box-shadow: 2px 1px  8px #000000, 1px 1px 1px #b4abab;
 }
 
 .s_button::before {
@@ -45,7 +45,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right, #2f2f2f 0%, #d5d5ce 80%);
+  background-image: linear-gradient(to right, #000000 0%, #000000 100%);
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -58,18 +58,6 @@
 .s_button:hover::before {
   width: 32em;
 }
-/* 
-::-webkit-scrollbar {
-  width: 4px;
-  background-color: gray;
-  border-radius: 10px;
-} */
-
-/* ::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  scroll-behavior: smooth;
-} */
-
 
 
 /* social button */
@@ -109,7 +97,9 @@
 
 .social-btn:hover {
   width: 150px;
-  border-radius: 5px;
+  border-radius: 5px; 
+  background-color: black;
+  color: white;
 }
 
 .social-btn:hover span {
@@ -145,7 +135,7 @@
 
 .skill:hover {
   height: 180px;
-  background: linear-gradient(360deg, #000000c5 60%, rgb(251, 247, 217) 70%);
+  
 }
 
 .skill .content {

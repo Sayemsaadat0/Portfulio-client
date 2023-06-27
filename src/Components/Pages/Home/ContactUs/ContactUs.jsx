@@ -3,12 +3,15 @@ import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import { useState } from "react";
+
 
 
 
 
 
 const ContactUs = () => {
+    const [success, setSuccess] = useState(null);
 
     const form = useRef();
 
@@ -19,6 +22,7 @@ const ContactUs = () => {
 
         emailjs.sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, import.meta.env.VITE_YOUR_PUBLIC_KEY)
             .then((result) => {
+                setSuccess(true)
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
@@ -106,7 +110,9 @@ const ContactUs = () => {
                         </div>
 
                     </form>
-
+                    {
+                        success && "Your message has been sent. We'll get back to you soon"
+                    }
                 </div>
                 {/* right side */}
                 <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col items-center text-center font-bold text-xl mt-4">
@@ -134,21 +140,21 @@ const ContactUs = () => {
 
             {/* bottom links */}
             <div className="flex justify-center mt-10 gap-10 text-5xl social-links">
-                <Link
+                <Link to='https://www.facebook.com/Bilatindur' target="_blank"
                     className="social-btn flex-center">
                     <FaFacebook></FaFacebook>
                     <span
                         className="text-sm">Facebook</span>
                 </Link>
 
-                <Link
+                <Link to='https://github.com/Sayemsaadat0' target="_blank"
                     className="social-btn flex-center">
                     <FaGithub></FaGithub>
                     <span
                         className="text-sm">Github</span>
                 </Link>
 
-                <Link
+                <Link target="_blank" to='https://www.linkedin.com/in/abu-saadat-md-sayem-59236b281/'
                     className="social-btn flex-center">
                     <FaLinkedinIn></FaLinkedinIn>
                     <span
@@ -157,7 +163,6 @@ const ContactUs = () => {
 
             </div>
         </div>
-
     );
 };
 
