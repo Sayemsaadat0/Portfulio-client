@@ -21,13 +21,11 @@ const Navbar = () => {
         <Link to='/aboutme'
             className="s_button">About Me</Link>
 
-        <Link
+        <Link to='/projects'
             className="s_button">Projects</Link>
 
         <button className="s_button" onClick={handleDownload}>Download Resume</button>
 
-        {/*  <a href="/public/resume.pdf"
-            className="s_button">Download Resume</a> */}
     </div>
 
 

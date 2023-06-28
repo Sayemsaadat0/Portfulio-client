@@ -106,7 +106,7 @@ const ContactUs = () => {
                         <div className="flex justify-center mt-4 ">
                             <button
                                 className="s_button w-full text-white"
-                                type="submit">Submit</button>
+                                type="submit">Send Message</button>
                         </div>
 
                     </form>

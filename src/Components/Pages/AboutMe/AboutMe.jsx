@@ -1,19 +1,30 @@
 import { Slide } from "react-awesome-reveal";
 
 const AboutMe = () => {
+
+    const handleDownload = () => {
+        const url = "/public/resumeOfSayemSaadat.pdf";
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = "resumeOfSayemSaadat.pdf";
+        anchor.click();
+    }
+
+
+
     return (
         <div className="max-w-[1440px] h-full mx-auto">
-         <Slide direction="right">
-         <img className="w-full" src="https://i.ibb.co/Y2YdZfv/About-Me-3.gif" alt="" />
-         </Slide>
+            <Slide direction="right">
+                <img className="w-full" src="https://i.ibb.co/Y2YdZfv/About-Me-3.gif" alt="" />
+            </Slide>
 
             {/* CARD  */}
             <Slide>
-            <div className="card  mx-auto lg:card-side   mt-20 mb-10 ">
-                <div className="lg:w-1/3">
-                    <img className="h-96  mx-auto " src="https://i.ibb.co/N343QgG/Untitled-design-5.png" alt="Album" />
-                </div>
-                
+                <div className="card  mx-auto lg:card-side   mt-20 mb-10 ">
+                    <div className="lg:w-1/3">
+                        <img className="h-96  mx-auto " src="https://i.ibb.co/N343QgG/Untitled-design-5.png" alt="Album" />
+                    </div>
+
                     <div className="card-body lg:w-2/3">
                         <h3 className="text-xl font-bold ">Hello! I am  Sayem Saadat,</h3>
                         <p className=" ">
@@ -25,13 +36,14 @@ const AboutMe = () => {
                             Overall, I am a driven and ambitious individual who is committed to honing my craft and making a meaningful impact in the web development field. I am excited about the possibilities that lie ahead and look forward to the journey of becoming an experienced and proficient web developer.
                         </p>
                         <div className="card-actions justify-start">
-                            < button
+                            <button
+                                onClick={handleDownload}
                                 className="s_button w-60 relative right-0">Download Resume</button>
                         </div>
 
                     </div>
-            </div>
-                </Slide>
+                </div>
+            </Slide>
 
 
         </div>

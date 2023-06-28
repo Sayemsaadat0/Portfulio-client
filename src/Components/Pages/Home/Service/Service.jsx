@@ -22,17 +22,17 @@ const Service = () => {
                         <p className="ms-5 mt-4">---With a deep understanding of JavaScript and front-end frameworks like React, I transform designs into fully functional and interactive web applications..</p>
                     </div>
 
-                    <div className="card  w-[80%] md:w-full mx-auto service_card h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 ">
+                    <div className="card  w-[80%] md:w-full mx-auto service_card h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 hover:scale-105 duration-500 ">
                         <h3 className="text-3xl font-bold ms-5">User Interface (UI) Design</h3>
                         <p className="ms-5 mt-4">---Through meticulous attention to typography, color palettes, and layout, I design interfaces that are not only aesthetically pleasing but also enhance usability and overall user satisfaction.</p>
                     </div>
 
-                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 ">
+                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 row-span-2 hover:scale-105 duration-500 ">
                         <h3 className="text-3xl font-bold ms-5">Responsive Web Design</h3>
                         <p className="ms-5 mt-4">---Harnessing the power of HTML, CSS, and JavaScript, I create visually appealing and fully responsive websites.</p>
                     </div>
 
-                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 ">
+                    <div className="card  service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 hover:scale-105 duration-500 ">
                         <h3 className="text-3xl font-bold ms-5">Website Maintenance <br /> and Support</h3>
                         <p className="ms-5 mt-4">---From bug fixes to content updates, I am dedicated to keeping your website running smoothly.</p>
                     </div>
