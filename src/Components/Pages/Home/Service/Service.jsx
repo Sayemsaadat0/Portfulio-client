@@ -17,7 +17,7 @@ const Service = () => {
 
                 <div className="lg:grid grid-cols-2 w-full lg:w-1/2 gap-10 mt-5 lg:ms-5 mx-auto ">
                     <div 
-                       className="card service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-5 lg:mb-0 ">
+                       className="card service_card w-[80%] md:w-full mx-auto h-auto flex justify-center items-center mb-10 lg:mb-0 hover:scale-105 duration-500 ">
                         <h3 className="text-3xl font-bold ms-5">Front-End Development</h3>
                         <p className="ms-5 mt-4">---With a deep understanding of JavaScript and front-end frameworks like React, I transform designs into fully functional and interactive web applications..</p>
                     </div>

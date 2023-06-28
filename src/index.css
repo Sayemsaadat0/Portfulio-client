@@ -7,20 +7,13 @@
   background-size: contain;
 }
 
-
-
-
 /* card */
 .service_card {
   border-radius: 19px;
   background: #000000;
   color: white;
-  box-shadow: 5px -5px 10px #5a5a5a, -5px 5px 10px #ffffff;
+  box-shadow: 2px -2px 5px #ffffff, -2px 2px 2px #ffffff;
 }
-
-
-
-
 
 /* button */
 .s_button {
@@ -35,7 +28,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 2px 1px  8px #ffffff, 1px 1px 1px #b4abab;
+  box-shadow: 2px 1px 8px #ffffff, 1px 1px 1px #b4abab;
 }
 
 .s_button::before {
@@ -60,7 +53,6 @@
   width: 32em;
 }
 
-
 /* social button */
 .social-links,
 .flex-center {
@@ -74,18 +66,11 @@
   height: 50px;
   width: 50px;
   font-family: "Titillium Web", sans-serif;
-  color: #333;
+  color: #000000;
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  background: white;
-  margin: 5px;
+  background: rgb(255, 255, 255);
   transition: 0.3s;
-  justify-content: center;
-}
-
-.social-btn svg {
-  height: 24px;
-  width: 24px;
 }
 
 .social-btn span {
@@ -98,8 +83,7 @@
 
 .social-btn:hover {
   width: 150px;
-  border-radius: 5px; 
-  background-color: rgb(255, 254, 254);
+  border-radius: 5px;
 }
 
 .social-btn:hover span {
@@ -107,11 +91,9 @@
   width: 80px;
 }
 
-
-
 /* animation */
-.card1{
-  animation: animate 1s infinite ease alternate
+.card1 {
+  animation: animate 1s infinite ease alternate;
 }
 @keyframes animate {
   to {
@@ -119,42 +101,35 @@
   }
 }
 
-
-
 /* skill card */
 .skill {
   height: 120px;
   border-radius: 20px;
-  transition: all .5s ease-in-out; 
-  box-shadow: 15px 15px 30px rgba(255, 255, 255, 0.4),
-             -15px -15px 30px rgba(255, 255, 255, 0.1);
-  text-align: center;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px -2px 5px #ffffff, -2px 2px 2px #ffffff;
   overflow: hidden;
   position: relative;
 }
 
 .skill:hover {
   height: 180px;
-  
 }
 
 .skill .content {
   display: none;
-  text-align: justify;
   color: #ffffff;
   margin: 0 18px;
   position: absolute;
-  bottom: -150px;
   width: 100%;
-  transition: all .5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 
 .skill:hover .content {
   display: block;
-  top: 130px;
+  top: 135px;
 }
 
 .skill .content p {
-  transition: all .5s;
+  transition: all 1s;
   font-size: 20px;
 }

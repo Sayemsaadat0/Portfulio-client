@@ -144,21 +144,21 @@ const ContactUs = () => {
             <div className="flex justify-center mt-10 gap-10 text-5xl social-links">
                 <Link to='https://www.facebook.com/Bilatindur' target="_blank"
                     className="social-btn flex-center">
-                    <FaFacebook></FaFacebook>
+                    <FaFacebook className="ms-1"></FaFacebook>
                     <span
                         className="text-sm">Facebook</span>
                 </Link>
 
                 <Link to='https://github.com/Sayemsaadat0' target="_blank"
                     className="social-btn flex-center">
-                    <FaGithub></FaGithub>
+                    <FaGithub className="ms-1"></FaGithub>
                     <span
-                        className="text-sm">Github</span>
+                        className="text-sm ">Github</span>
                 </Link>
 
                 <Link target="_blank" to='https://www.linkedin.com/in/abu-saadat-md-sayem-59236b281/'
-                    className="social-btn flex-center">
-                    <FaLinkedinIn></FaLinkedinIn>
+                    className="social-btn flex-center ">
+                    <FaLinkedinIn className="ms-2"></FaLinkedinIn>
                     <span
                         className="text-sm">Linkdin</span>
                 </Link>

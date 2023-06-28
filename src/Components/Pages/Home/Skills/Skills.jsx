@@ -10,7 +10,7 @@ const Skills = () => {
 
                 <div data-aos="fade-right"
                     data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" className=" grid grid-cols-2  lg:grid-cols-4 gap-20 mt-20 font-bold ">
+                    data-aos-easing="ease-in-sine" className=" grid grid-cols-2  lg:grid-cols-4 gap-10 mt-20 font-bold ">
                     <div className="skill card1 hover:bg-yellow-500 ">
                         <img className="img-box w-full" src="https://i.ibb.co/1m6kt59/2.png" alt="" />
                         <div className="content">

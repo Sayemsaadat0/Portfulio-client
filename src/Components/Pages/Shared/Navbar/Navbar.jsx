@@ -1,20 +1,33 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+// import resume from "resume.pdf
 
 const Navbar = () => {
+
+
+    const handleDownload = () => {
+        const url = "/public/resumeOfSayemSaadat.pdf";
+        const anchor = document.createElement("a");
+        anchor.href = url;
+        anchor.download = "resumeOfSayemSaadat.pdf";
+        anchor.click();
+    }
+
     const [navbar, setNavbar] = useState(false);
     const navOptions = <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 ">
-      <Link  to='/'
-      className="s_button">Home</Link>
+        <Link to='/'
+            className="s_button">Home</Link>
 
-      <Link  to='/aboutme'
-      className="s_button">About Me</Link>
-    
-      <Link 
-      className="s_button">Projects</Link>
-    
-      <button 
-      className="s_button">Download Resume</button>
+        <Link to='/aboutme'
+            className="s_button">About Me</Link>
+
+        <Link
+            className="s_button">Projects</Link>
+
+        <button className="s_button" onClick={handleDownload}>Download Resume</button>
+
+        {/*  <a href="/public/resume.pdf"
+            className="s_button">Download Resume</a> */}
     </div>
 
 
@@ -23,9 +36,9 @@ const Navbar = () => {
             <div className="justify-between px-4 mx-auto  md:items-center md:flex ">
                 <div>
                     <div className="flex items-center justify-between py-3 md:block">
-                     
-                     <Link to='/'> <img className="hover:scale-125 duration-500"  width={80}  src="https://i.ibb.co/tc9PN8j/Untitled-design-4.png" alt="" /></Link>
-                   
+
+                        <Link to='/'> <img className="hover:scale-125 duration-500" width={60} src="https://i.ibb.co/tc9PN8j/Untitled-design-4.png" alt="" /></Link>
+
                         <div className="md:hidden">
                             <button
                                 className=" text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -53,8 +66,8 @@ const Navbar = () => {
                                         <path
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
-                                            d="M4 6h16M4 12h16M4 18h16"/>
-                                    </svg> )}
+                                            d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>)}
                             </button>
                         </div>
                     </div>
