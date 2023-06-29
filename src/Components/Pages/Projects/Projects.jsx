@@ -23,8 +23,8 @@ const Projects = () => {
                             <h2 className="card-title">Job Hunters</h2>
                             <p>Jobhunters is a front-end website that helps job seekers find their dream jobs. The website offers a comprehensive database of job listings, including full-time, part-time</p>
                             <div className="card-actions end">
-                                <Link className="s_button">Live site</Link>
-                                <Link className="s_button">Codes</Link>
+                                <Link to='https://golden-sunburst-4aac7f.netlify.app/' target="_blank" className="s_button">Live site</Link>
+                                <Link to='https://github.com/Sayemsaadat0/Job-Hunters' target="_blank" className="s_button">Codes</Link>
                             </div>
                         </div>
 
@@ -37,9 +37,9 @@ const Projects = () => {
                             <h2 className="card-title">KawaiiKorner</h2>
                             <p>Kawaii Korner is a website where parents can buy kawaii toys for their children. The website offers a wide variety of toys, including stuffed animals, dolls, figurines, and more. </p>
                             <div className="card-actions end">
-                                <Link className="s_button">Live site</Link>
-                                <Link className="s_button">Client side code</Link>
-                                <Link className="s_button">Server Side code</Link>
+                                <Link to='https://kawaiikorner-e8b83.web.app/' target="_blank" className="s_button">Live site</Link>
+                                <Link to='https://github.com/Sayemsaadat0/kawaiikorner-client/tree/main' target="_blank" className="s_button">Client side code</Link>
+                                <Link to='https://github.com/Sayemsaadat0/kawaiikorner-server' target="_blank" className="s_button">Server Side code</Link>
                             </div>
                         </div>
 
