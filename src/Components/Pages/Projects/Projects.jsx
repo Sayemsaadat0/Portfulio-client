@@ -1,4 +1,5 @@
 import { Slide } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
 
@@ -16,29 +17,29 @@ const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 mb-10 mx-auto items-center">
                     {/* card1 */}
                     <div className="card card-compact   shadow-xl">
-                        <img src="https://i.ibb.co/KD5SH79/screencapture-golden-sunburst-4aac7f-netlify-app-2023-06-29-00-24-53.png" alt="Shoes" />
+                        <img src="https://i.ibb.co/BcGdgPx/landscape1.png" alt="Shoes" />
 
                         <div className="card-body bg-black shadow-lg shadow-white">
                             <h2 className="card-title">Job Hunters</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p>Jobhunters is a front-end website that helps job seekers find their dream jobs. The website offers a comprehensive database of job listings, including full-time, part-time</p>
                             <div className="card-actions end">
-                                <button className="s_button">Live site</button>
-                                <button className="s_button">Codes</button>
+                                <Link className="s_button">Live site</Link>
+                                <Link className="s_button">Codes</Link>
                             </div>
                         </div>
 
                     </div>
                     {/* card2 */}
                     <div className="card card-compact  shadow-xl">
-                        <img src="https://i.ibb.co/0cBW79G/screencapture-localhost-5174-2023-06-28-23-55-29.png" alt="Shoes" />
+                        <img src="https://i.ibb.co/G0N7DY3/landscape2.png" alt="Shoes" />
 
                         <div className="card-body bg-black shadow-lg shadow-white">
                             <h2 className="card-title">KawaiiKorner</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p>Kawaii Korner is a website where parents can buy kawaii toys for their children. The website offers a wide variety of toys, including stuffed animals, dolls, figurines, and more. </p>
                             <div className="card-actions end">
-                                <button className="s_button">Live site</button>
-                                <button className="s_button">Client side code</button>
-                                <button className="s_button">Server Side code</button>
+                                <Link className="s_button">Live site</Link>
+                                <Link className="s_button">Client side code</Link>
+                                <Link className="s_button">Server Side code</Link>
                             </div>
                         </div>
 
@@ -46,15 +47,15 @@ const Projects = () => {
 
                     {/* card3 */}
                     <div className="card card-compact   shadow-xl ">
-                        <img src="https://i.ibb.co/YkMQ9cs/screencapture-musicits-web-app-2023-06-28-23-36-44.png" alt="Shoes" />
+                        <img src="https://i.ibb.co/xGDf00w/landscape3.png" alt="Shoes" />
 
                         <div className="card-body bg-black shadow-lg shadow-white">
                             <h2 className="card-title">Musicits</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p>Musicits is a website where people can buy courses on learning musical instruments. The website offers a wide variety of courses, from beginner to advanced levels, and covers all major instruments. All of the courses on Musicits are taught by experienced musicians, and they are designed to be both informative and engaging.</p>
                             <div className="card-actions end">
-                                <button className="s_button">Live site</button>
-                                <button className="s_button">Client side code</button>
-                                <button className="s_button">Server Side code</button>
+                                <Link target="_blank" to='https://musicits.web.app/' className="s_button">Live site</Link>
+                                <Link target="_blank" to='https://github.com/Sayemsaadat0/musicits-client' className="s_button">Client side code</Link>
+                                <Link  target="_blank" to='https://github.com/Sayemsaadat0/musicits-server' className="s_button">Server Side code</Link>
                             </div>
                         </div>
 
@@ -70,7 +71,5 @@ const Projects = () => {
 
 export default Projects;
 
-/* https://i.ibb.co/KD5SH79/screencapture-golden-sunburst-4aac7f-netlify-app-2023-06-29-00-24-53.png
-https://i.ibb.co/0cBW79G/screencapture-localhost-5174-2023-06-28-23-55-29.png
-https://i.ibb.co/YkMQ9cs/screencapture-musicits-web-app-2023-06-28-23-36-44.png
+/* 
  */

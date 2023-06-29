@@ -1,16 +1,15 @@
-import { useState } from "react";
+import {useState } from "react";
 import { Link } from "react-router-dom";
-// import resume from "resume.pdf
+// import resumeUrl from "../../../../../src/assets/resumeOfSayemSaadat.pdf"
 
 const Navbar = () => {
 
-
-    const handleDownload = () => {
-        const url = "/public/resumeOfSayemSaadat.pdf";
-        const anchor = document.createElement("a");
-        anchor.href = url;
-        anchor.download = "resumeOfSayemSaadat.pdf";
-        anchor.click();
+    const handleDownload = () =>{
+        const url = 'https://firebasestorage.googleapis.com/v0/b/portfulio-of-sayem.appspot.com/o/Abu%20Saadat%20Md.%20Sayem%20resume.pdf?alt=media&token=d1958cf8-2b09-4e83-8439-910d7f91291c' 
+        const anchor = document.createElement("a")
+        anchor.href = url 
+        anchor.download = 'Abu Saadat Md. Sayem resume.pdf'
+        anchor.click()
     }
 
     const [navbar, setNavbar] = useState(false);
@@ -24,7 +23,9 @@ const Navbar = () => {
         <Link to='/projects'
             className="s_button">Projects</Link>
 
-        <button className="s_button" onClick={handleDownload}>Download Resume</button>
+        <button className="s_button" onClick={handleDownload}>
+            Download Resume
+        </button>
 
     </div>
 

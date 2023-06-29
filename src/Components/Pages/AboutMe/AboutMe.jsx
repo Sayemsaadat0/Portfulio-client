@@ -1,16 +1,7 @@
 import { Slide } from "react-awesome-reveal";
+import resume from "../../../assets/resumeOfSayemSaadat.pdf"
 
 const AboutMe = () => {
-
-    const handleDownload = () => {
-        const url = "/public/resumeOfSayemSaadat.pdf";
-        const anchor = document.createElement("a");
-        anchor.href = url;
-        anchor.download = "resumeOfSayemSaadat.pdf";
-        anchor.click();
-    }
-
-
 
     return (
         <div className="max-w-[1440px] h-full mx-auto">
@@ -36,9 +27,8 @@ const AboutMe = () => {
                             Overall, I am a driven and ambitious individual who is committed to honing my craft and making a meaningful impact in the web development field. I am excited about the possibilities that lie ahead and look forward to the journey of becoming an experienced and proficient web developer.
                         </p>
                         <div className="card-actions justify-start">
-                            <button
-                                onClick={handleDownload}
-                                className="s_button w-60 relative right-0">Download Resume</button>
+                            <a className="s_button" href={resume} download>Download Resume</a> 
+                            
                         </div>
 
                     </div>
