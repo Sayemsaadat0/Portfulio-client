@@ -4,7 +4,7 @@ import Footar from "../../Pages/Shared/Footar/Footar";
 
 const Main = () => {
     return (
-        <div className="min-h-screen">
+        <div className="max-w-[1366px] mx-auto">
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footar></Footar>
