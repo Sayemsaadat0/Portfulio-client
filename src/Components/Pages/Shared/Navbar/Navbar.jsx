@@ -4,12 +4,13 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     const navoptions = <>
-        <NavLink to='/' className='text-xl my-2'>Home</NavLink>
+        <NavLink to='/' className='text-xl my-2 text-primary'>Home</NavLink>
         <NavLink to='/about' className='text-xl my-2'>About</NavLink>
         <NavLink to='/portfulio' className='text-xl my-2'>Portfulio</NavLink>
         <NavLink to='/contact' className='text-xl my-2'>Contact</NavLink>
         <NavLink to='/blogs' className='text-xl my-2'>Blogs</NavLink>
-        <a className='text-xl bg-black text-white px-4 py-2 rounded-full text-center flex justify-center items-center hover:bg-[#9D3535] ' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a> 
+        <a className='btn rounded-full  btn-neutral hover:bg-primary border-none' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a> 
+        {/* <a className='text-xl bg-black text-white px-4 py-2 rounded-full text-center flex justify-center items-center hover:bg-[#9D3535] ' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a>  */}
     </>
     return (
         <div className="navbar bg-base-100 items-center  md:flex justify-between text-center">
