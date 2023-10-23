@@ -4,7 +4,6 @@
 
 
 html{
-  scroll-snap-type: Y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -13,6 +12,8 @@ html{
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+
+
 }
 
 ::selection {
@@ -20,8 +21,9 @@ html{
   background-color: #9d3535;
 }
 
+
 section{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;

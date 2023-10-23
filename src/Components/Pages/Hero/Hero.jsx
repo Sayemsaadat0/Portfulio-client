@@ -2,9 +2,9 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
     return (
-        <div className='px-2'>
-             <div className='md:flex  justify-between text-center md:text-left '>
-                <div className='div1 md:w-1/3 md:pt-28 justify-between flex flex-col'>
+        <div id='hero' className='px-2 py-20 md:py-32'>
+             <div className='md:flex  items-center  justify-between  text-center md:text-left '>
+                <div className='div1 md:w-1/3 relative md:min-h-[520px] md:pt-28 justify-between  flex flex-col'>
                     <div>
                         <h3 className="md:text-3xl font-bold ">Hey there!</h3>
                         <h1 className="md:text-6xl text-4xl  md:mt-4 font-bold ">I am  <span className="text-primary">Sayem.</span></h1>
@@ -29,7 +29,7 @@ const Hero = () => {
                     </div>
 
 
-                    <div className='hidden lg:block'>
+                    <div className='hidden lg:block absolute bottom-0'>
                         <span className='text-sm'>Born in</span><br />
                         <span className='text-xl'>Bangladesh</span>  <br />
                         <span className='text-sm'>Date of Birth</span> <br />
@@ -51,9 +51,9 @@ const Hero = () => {
                     </div>
                     <img className=''  src="https://i.ibb.co/mcXRKcQ/Untitled-design-7.png" alt="" />
                 </div>
-                <div className='div3 md:w-1/3 relative hidden md:flex items-center '>
+                <div className='div3 md:w-1/3 min-h-[550px] relative hidden md:flex items-center '>
                     {/* countup for middium device top right */}
-                    <div className='absolute right-3 top-0'>
+                    <div className='absolute  right-3  top-0'>
                         <div>
                             <p className='text-6xl font-bold'>30+</p>
                             <p>Projects</p>

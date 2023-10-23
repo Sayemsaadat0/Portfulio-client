@@ -34,18 +34,36 @@ const ContactUs = () => {
     console.log(errors);
     return (
 
-        <div className="max-w-[1440px] mx-auto ">
-            <div className="lg:flex ">
+        <div id="#contact" className="w-full px-2">
+            <div className="lg:flex justify-around ">
 
                 {/* left side */}
-                <div className="flex flex-col  p-5">
+                <div className="md:w-1/2   mx-auto  mt-4">
+                    <h2 className="text-3xl tracking-widest pb-4 text-center ">Get In Touch</h2>
+                    <div className="font-bold  my-10 h-full">
+                        <p className="mt-5">Name Sayem Saadat</p>
+                        <p className="mt-5">Location Naogaon,Bangladesh</p>
+                        <p className="mt-5">Email sayemsaadat0@gmail.com</p>
+                        <p className="mt-5">Phone No. +8801521574741</p>
+                        <div className="flex gap-10 py-10">
+                            <a className="btn btn-outline  hover:bg-primary border-none" href="">Linkedin</a>
+                            <a className="btn btn-outline  hover:bg-primary border-none" href="">Linkedin</a>
+                            <a className="btn btn-outline  hover:bg-primary border-none" href="">Linkedin</a>
+                        </div>
+                    </div>
                     <div>
-                        <h3 className="text-center font-bold text-xl">Send A Message</h3>
+
+                    </div>
+                </div>
+                {/* right side */}
+                <div className="flex flex-col md:w-1/2 p-5">
+                    <div>
+                        <h2 className="text-3xl tracking-widest pb-4 text-center ">Send A Message</h2>
                     </div>
 
-                    <form  className="mb-5 text-black" ref={form} onSubmit={handleSubmit(onSubmit)}>
+                    <form className="mb-5 text-black" ref={form} onSubmit={handleSubmit(onSubmit)}>
 
-                        <div className="lg:flex gap-5">
+                        <div className=" ">
                             {/* Name */}
                             <div>
                                 <label className="label">
@@ -54,7 +72,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input  w-full shadow-md "
+                                    className="input w-full  border-black"
                                     type="text"
                                     name="name"
                                     placeholder="Enter Your Name"
@@ -68,7 +86,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input  w-full shadow-md "
+                                    className="input  w-full border-black"
                                     type="email"
                                     name="email"
                                     placeholder=" Enter Your Email"
@@ -83,7 +101,7 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <input
-                                className="input  w-full shadow-md "
+                                className="input  w-full border-black "
                                 type="text"
                                 name="subject"
                                 placeholder="Subject of Message"
@@ -97,46 +115,26 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <textarea
-                                className="textarea h-44   w-full shadow-md "
+                                className="textarea h-44   w-full border-black"
                                 name="message"
                                 placeholder="Message"
                                 {...register("message", { required: true })}></textarea>
                         </div>
 
-                        <div className="flex justify-center mt-4 ">
+                        <div className="flex justify-end mt-4 ">
                             <button
-                                className="s_button w-full "
+                                className="btn btn-neutral hover:bg-primary border-none  "
                                 type="submit">Send Message</button>
                         </div>
 
                     </form>
-                   <p className="mt-5">
-                   {
-                        success && "Your message has been sent. We'll get back to you soon!"
-                    }
-                   </p>
+                    <p className="mt-5">
+                        {
+                            success && "Your message has been sent. We'll get back to you soon!"
+                        }
+                    </p>
                 </div>
-                {/* right side */}
-                <div className="w-full md:w-full lg:w-[50%] mx-auto flex flex-col items-center text-center font-bold text-xl mt-4">
-                    <h3 className="text-center text-4xl font-bold underline uppercase">contact us</h3>
-                    <h4 className="mt-4 uppercase text-2xl">Get in touch</h4>
-                    <p className="mt-2">Hey! we are looking forward to start a project with you! <br />
-                        Feel free to reach out!</p>
 
-                    <p className="font-md mt-5">Name<br />
-                        Sayem Saadat
-                    </p>
-                    <p className="font-md mt-5">Location<br />
-                        Naogaon,Bangladesh
-                    </p>
-                    <p className="font-md mt-5">Email<br />
-                        sayemsaadat0@gmail.com
-                    </p>
-                    <p className="font-md mt-5">Phone No.<br />
-                        +8801521574741
-                    </p>
-
-                </div>
             </div>
 
         </div>

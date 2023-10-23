@@ -1,19 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 
 
 const Navbar = () => {
     const navoptions = <>
-        <NavLink to='/' className='text-xl my-2 text-primary'>Home</NavLink>
-        <NavLink to='/about' className='text-xl my-2'>About</NavLink>
-        <NavLink to='/portfulio' className='text-xl my-2'>Portfulio</NavLink>
-        <NavLink to='/contact' className='text-xl my-2'>Contact</NavLink>
-        <NavLink to='/blogs' className='text-xl my-2'>Blogs</NavLink>
+        <a href='#hero' className='text-xl my-2 text-primary'>Home</a>
+        <a href='#about' className='text-xl my-2'>About</a>
+        <a href='#portfulio' className='text-xl my-2'>Portfulio</a>
+        <a href='#contact' className='text-xl my-2'>Contact</a>
         <a className='btn rounded-full  btn-neutral hover:bg-primary border-none' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a> 
-        {/* <a className='text-xl bg-black text-white px-4 py-2 rounded-full text-center flex justify-center items-center hover:bg-[#9D3535] ' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a>  */}
     </>
     return (
-        <div className="navbar bg-white max-w-[1366px] items-center  md:flex justify-between text-center fixed">
+        <div className="navbar z-10 bg-white max-w-[1366px] items-center  md:flex justify-between text-center fixed">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -26,7 +24,7 @@ const Navbar = () => {
                 <a href='/' className="text-2xl font-semibold">Sayem.dev</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal flex gap-5">
+                <ul className="menu menu-horizontal bg-white flex gap-5">
                     {navoptions} 
                 </ul>
             </div>
