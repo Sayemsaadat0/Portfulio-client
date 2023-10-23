@@ -34,7 +34,7 @@ const ContactUs = () => {
     console.log(errors);
     return (
 
-        <div className="max-w-[1440px] mx-auto px-4 md:px-8 mt-20 mb-10 ">
+        <div className="max-w-[1440px] mx-auto ">
             <div className="lg:flex ">
 
                 {/* left side */}
@@ -54,7 +54,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input border-white w-full shadow-md shadow-white"
+                                    className="input  w-full shadow-md "
                                     type="text"
                                     name="name"
                                     placeholder="Enter Your Name"
@@ -68,7 +68,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input border-white w-full shadow-md shadow-white"
+                                    className="input  w-full shadow-md "
                                     type="email"
                                     name="email"
                                     placeholder=" Enter Your Email"
@@ -83,7 +83,7 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <input
-                                className="input border-white w-full shadow-md shadow-white"
+                                className="input  w-full shadow-md "
                                 type="text"
                                 name="subject"
                                 placeholder="Subject of Message"
@@ -97,7 +97,7 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <textarea
-                                className="textarea h-44  border-white w-full shadow-md shadow-white"
+                                className="textarea h-44   w-full shadow-md "
                                 name="message"
                                 placeholder="Message"
                                 {...register("message", { required: true })}></textarea>
@@ -105,7 +105,7 @@ const ContactUs = () => {
 
                         <div className="flex justify-center mt-4 ">
                             <button
-                                className="s_button w-full text-white"
+                                className="s_button w-full "
                                 type="submit">Send Message</button>
                         </div>
 
@@ -139,31 +139,6 @@ const ContactUs = () => {
                 </div>
             </div>
 
-
-            {/* bottom links */}
-            <div className="flex justify-center mt-10 gap-10 text-5xl social-links">
-                <Link to='https://www.facebook.com/Bilatindur' target="_blank"
-                    className="social-btn flex-center">
-                    <FaFacebook className="ms-1"></FaFacebook>
-                    <span
-                        className="text-sm">Facebook</span>
-                </Link>
-
-                <Link to='https://github.com/Sayemsaadat0' target="_blank"
-                    className="social-btn flex-center">
-                    <FaGithub className="ms-1"></FaGithub>
-                    <span
-                        className="text-sm ">Github</span>
-                </Link>
-
-                <Link target="_blank" to='https://www.linkedin.com/in/abu-saadat-md-sayem-59236b281/'
-                    className="social-btn flex-center ">
-                    <FaLinkedinIn className="ms-2"></FaLinkedinIn>
-                    <span
-                        className="text-sm">Linkdin</span>
-                </Link>
-
-            </div>
         </div>
     );
 };

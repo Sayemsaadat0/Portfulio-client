@@ -2,134 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-.banner {
-  background-repeat: no-repeat;
-  background-size: contain;
+
+html{
+  scroll-behavior: smooth;
 }
 
-/* card */
-.service_card {
-  border-radius: 19px;
-  background: #000000;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
   color: white;
-  box-shadow: 2px -2px 5px #ffffff, -2px 2px 2px #ffffff;
+  background-color: #91d8f9;
 }
 
-/* button */
-.s_button {
-  width: full;
-  padding: 6px 6px;
-  height: 2em;
-  border-radius: 20em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 2px 1px 8px #ffffff, 1px 1px 1px #b4abab;
+a{
+  text-decoration: none;
+  color: inherit;
+}
+section{
+  height: 100vh; 
+  scroll-snap-align: center;
 }
 
-.s_button::before {
-  content: "";
-  width: 0;
-  height: 2em;
-  border-radius: 20em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #f2f2f2 0%, #ffffff 100%);
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
+p{
+  font-size: larger;
 }
 
-.s_button:hover {
-  color: rgb(0, 0, 0);
+.active{
+  text-decoration: underline;
 }
 
-.s_button:hover::before {
-  width: 32em;
-}
-
-/* social button */
-.social-links,
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-btn {
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  font-family: "Titillium Web", sans-serif;
-  color: #000000;
-  border-radius: 10px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
-  transition: 0.3s;
-}
-
-.social-btn span {
-  width: 0px;
-  overflow: hidden;
-  transition: 0.3s;
-  text-align: center;
-  margin-left: 5px;
-}
-
-.social-btn:hover {
-  width: 150px;
-  border-radius: 5px;
-}
-
-.social-btn:hover span {
-  padding: 2px;
-  width: 80px;
-}
-
-/* animation */
-.card1 {
-  animation: animate 1s infinite ease alternate;
-}
-@keyframes animate {
-  to {
-    transform: translateY(20px);
-  }
-}
-
-/* skill card */
-.skill {
-  height: 120px;
-  border-radius: 20px;
-  transition: all 0.5s ease-in-out;
-  box-shadow: 2px -2px 5px #ffffff, -2px 2px 2px #ffffff;
-  overflow: hidden;
-  position: relative;
-}
-
-.skill:hover {
-  height: 180px;
-}
-
-.skill .content {
-  display: none;
-  color: #ffffff;
-  margin: 0 18px;
-  position: absolute;
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
-
-.skill:hover .content {
-  display: block;
-  top: 135px;
-}
-
-.skill .content p {
-  transition: all 1s;
-  font-size: 20px;
-}
