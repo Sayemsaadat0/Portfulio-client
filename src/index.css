@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+html{
+  scroll-snap-type: Y mandatory;
+  scroll-behavior: smooth;
+}
 
 *{
   padding: 0;
@@ -13,11 +17,15 @@
 
 ::selection {
   color: white;
-  background-color: #91d8f9;
+  background-color: #9d3535;
 }
 
 section{
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
 }
 
 a{
