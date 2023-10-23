@@ -9,8 +9,7 @@ const Navbar = () => {
         <NavLink to='/portfulio' className='text-xl my-2'>Portfulio</NavLink>
         <NavLink to='/contact' className='text-xl my-2'>Contact</NavLink>
         <NavLink to='/blogs' className='text-xl my-2'>Blogs</NavLink>
-        <a className='text-xl bg-black text-white px-4 py-2 rounded-full text-center flex justify-center items-center hover:text-gray-300' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a> 
-    
+        <a className='text-xl bg-black text-white px-4 py-2 rounded-full text-center flex justify-center items-center hover:bg-[#9D3535] ' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a> 
     </>
     return (
         <div className="navbar bg-base-100 items-center  md:flex justify-between text-center">
@@ -27,7 +26,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal flex gap-5">
-                    {navoptions}
+                    {navoptions} 
                 </ul>
             </div>
         </div>
