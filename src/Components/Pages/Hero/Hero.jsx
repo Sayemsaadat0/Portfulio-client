@@ -6,7 +6,7 @@ const Hero = () => {
              <div className='md:flex  items-center  justify-between  text-center md:text-left '>
                 <div className='div1 md:w-1/3 relative md:min-h-[520px] md:pt-28 justify-between  flex flex-col'>
                     <div>
-                        <h3 className="md:text-3xl font-bold ">Hey there!</h3>
+                        <h3 className="md:text-3xl font-bold ">Hey therethis is new 1</h3>
                         <h1 className="md:text-6xl text-4xl  md:mt-4 font-bold ">I am  <span className="text-primary">Sayem.</span></h1>
 
                         <div className='  flex md:hidden justify-center md:justify-start'>
