@@ -18,9 +18,6 @@ const Home = () => {
             <section>
                 <ContactUs></ContactUs>
             </section>
-            <section>
-                <App></App>
-            </section>
         </>
     );
 };
