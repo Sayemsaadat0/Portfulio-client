@@ -8,7 +8,7 @@ const Navbar = () => {
         <a href='#about' className='text-xl my-2'>About</a>
         <a href='#portfulio' className='text-xl my-2'>Portfulio</a>
         <a href='#contact' className='text-xl my-2'>Contact</a>
-        <a className='btn rounded-full  btn-neutral hover:bg-primary border-none' href='/src/assets/resumeOfSayemSaadat.pdf'>Resume</a> 
+        <a className='btn rounded-full  btn-neutral hover:bg-primary border-none' download={true} href='/resume.pdf'>Resume</a> 
     </>
     return (
         <div className="navbar z-10 bg-white max-w-[1366px] items-center  md:flex justify-between text-center fixed">
