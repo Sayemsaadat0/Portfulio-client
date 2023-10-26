@@ -34,7 +34,7 @@ const ContactUs = () => {
     console.log(errors);
     return (
 
-        <div id="#contact" className="w-full px-2">
+        <div id="contact" className="w-full px-2">
             <div className="lg:flex justify-around ">
 
                 {/* left side */}

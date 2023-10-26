@@ -8,7 +8,7 @@ const Portfulio = () => {
         <div id='portfulio'>
             <h2 className="text-3xl tracking-widest pb-4 text-center ">Portfulio</h2>
 
-            <div className='px-2 py-20 min-h-[550px] flex justify-center items-center '>
+            <div className='px-2 py-20  flex justify-center items-center '>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                     {/*  */}
                     <div className="card w-96 bg-base-100 shadow-xl">
