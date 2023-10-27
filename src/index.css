@@ -2,27 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
 
-
+.titleText{
+  font-family: 'Abril Fatface', serif;
 }
 
 ::selection {
   color: white;
-  background-color: #9d3535;
+  background-color: #6cbdcd;
 }
 
-
-section{
+section {
   /* height: 100vh; */
   display: flex;
   justify-content: center;
@@ -30,23 +29,21 @@ section{
   scroll-snap-align: center;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-p{
+p {
   font-size: larger;
 }
 
-.active{
+.active {
   text-decoration: underline;
 }
 
-
-.heroBg{
-  background-image: url('https://i.ibb.co/QJC4rjc/source.png');
+.heroBg {
+  background-image: url("https://i.ibb.co/QJC4rjc/source.png");
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
 }
-

@@ -4,10 +4,8 @@ import Footar from "../../Pages/Shared/Footar/Footar";
 
 const Main = () => {
     return (
-        <div className="max-w-[1366px] mx-auto">
-            <Navbar></Navbar>
+        <div className="max-w-[1366px] mx-auto border">
             <Outlet></Outlet>
-            <Footar></Footar>
         </div>
     );
 };
