@@ -21,13 +21,12 @@ html {
   background-color: #6cbdcd;
 }
 
-section {
-  /* height: 100vh; */
+/* section {
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: center;
-}
+} */
 
 a {
   text-decoration: none;
