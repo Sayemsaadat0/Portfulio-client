@@ -32,7 +32,7 @@ const Hero = () => {
 
 
             <div className='lg:flex justify-center items-end'>
-                <div className='whitespace-nowrap hidden lg:block'>
+                <div className='whitespace-nowrap hidden md:block'>
                     <p><span className='text-sm'>Date of Birth</span> : <br />April 26th,1999  </p>
                     <p className='text-sm'>Country:  Bangladesh  </p>
                 </div>
