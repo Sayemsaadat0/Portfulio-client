@@ -32,13 +32,17 @@ const Hero = () => {
 
 
             <div className='lg:flex justify-center items-end'>
-                <div>
-
+                <div className='whitespace-nowrap hidden lg:block'>
+                    <p><span className='text-sm'>Date of Birth</span> : <br />April 26th,1999  </p>
+                    <p className='text-sm'>Country:  Bangladesh  </p>
                 </div>
 
-                <div className="w-full py-5 text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold titleText  text-center  whitespace-nowrap">Abu Saadat Md. Sayem</h1>
-                    <p className='flex justify-center text-3xl'>
+                <div className="w-full py-5 ">
+                    <div className='title'>
+                        <h1 className="text-3xl md:text-6xl font-bold titleText  text-center  whitespace-nowrap">Abu Saadat Md. Sayem</h1>
+                        <h1 className="text-3xl md:text-6xl font-bold titleText  text-center  whitespace-nowrap">Abu Saadat Md. Sayem</h1>
+                    </div>
+                    <p className='flex justify-center text-3xl md:pt-20 pt-12'>
                         <Typewriter
                             options={{
                                 strings: ['Frontend', 'Javascript', 'React js', 'Next js'],

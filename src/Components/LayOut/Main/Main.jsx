@@ -4,7 +4,7 @@ import Footar from "../../Pages/Shared/Footar/Footar";
 
 const Main = () => {
     return (
-        <div className="max-w-[1366px] mx-auto">
+        <div className="max-w-[1366px] mx-auto px-4">
             <Outlet></Outlet>
         </div>
     );
