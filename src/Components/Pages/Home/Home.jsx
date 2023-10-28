@@ -77,6 +77,8 @@ import Mode from './Mode';
 import About from './About';
 import Educations from './Educations';
 import Projects from './Projects';
+import SocialLinks from './SocialLinks';
+import Skills from './Skills';
 
 const Home = () => {
     return (
@@ -85,8 +87,8 @@ const Home = () => {
             <div className="grid pt-4 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-5 grid-flow-row-dense">
                 <div className="z-20 overflow-hidden relative shadow-md rounded-lg sm:h-40">
                     <div className=" w-full  ">
-                        <div className="flex justify-between items-center ">
-                            <img className='object-fill hover:scale-110 duration-700' src="/sayem.png" alt="" />
+                        <div className="flex justify-between items-center image">
+                            {/* <img className='object-fill hover:scale-110 duration-700' src="/sayem.png" alt="" /> */}
                         </div>
                         <div className="w-full h-[0.9px]      " />
                     </div>
@@ -95,17 +97,7 @@ const Home = () => {
               <About></About>
               <Educations></Educations>
               <Projects></Projects>
-                <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg min-h-[50px] col-span-2  relative">
-                    <div className=" absolute w-full p-2 z-20">
-                        <p className="text-xs">Get in touch</p>
-                        <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-                    </div>
-
-                    <div className="mt-14 mb-4">
-                        <div className="flex justify-center gap-x-2 px-2">
-                        </div>
-                    </div>
-                </div>
+             <SocialLinks></SocialLinks>
                 <div className="dark:bg-[#1E1E1E] bg-white  overflow-hidden relative shadow-md rounded-lg min-h-[50px] col-span-2 row-span-3 md:row-span-2 ">
                     <div className=" absolute w-full p-2 z-10">
                         <div className="flex justify-between items-center ">
@@ -117,62 +109,7 @@ const Home = () => {
 
 
                 </div>
-                <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg col-span-2  relative  overflow-hidden  ">
-                    <div className=" absolute w-full p-2 z-20">
-                        <p className="text-xs">Side Projects</p>
-                        <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-                    </div>
-
-                    {/* Gradient  */}
-                    <div className=" bg-gradient-to-b  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent   h-20 transition-all ease-in duration-200" />
-                    {/* gradient ends */}
-
-                    <div className=" overflow-y-auto h-[180px] overflow-hidden scrollbar-hide scroll-smooth relative ">
-                        {/* Starts */}
-                        <div className="flex gap-x-3 mt-14 px-2  ">
-                            <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                                Since 2023
-                            </p>
-                            <div>
-                                <h4 className="text-xs font-bold">WebFlow</h4>
-                                <p className="text-[11px] text-neutral-500">Official partner</p>
-                            </div>
-                        </div>
-
-                        <div className="px-2 my-3 ">
-                            <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-                        </div>
-
-                        <div className="flex  gap-x-3 px-2 relative ">
-                            <p className="text-white  text-xs w-20 shrink-0  ">Since 2021</p>
-                            <div>
-                                <h4 className="text-xs font-bold">Awwward</h4>
-                                <p className="text-[11px] text-neutral-500">Jury Member</p>
-                            </div>
-                        </div>
-
-                        <div className="px-2 my-3 ">
-                            <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-                        </div>
-
-                        <div className="flex  gap-x-3  px-2 relative ">
-                            <p className="dark:text-white  text-xs w-20 shrink-0  ">
-                                Since 2018
-                            </p>
-                            <div>
-                                <h4 className="text-xs font-bold">ADC Club Global</h4>
-                                <p className="text-[11px] text-neutral-500">Jury Member</p>
-                            </div>
-                        </div>
-
-                        <div className="px-2 my-3 ">
-                            <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
-                        </div>
-                    </div>
-                    {/* Gradient  */}
-                    <div className=" bg-gradient-to-t  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent bottom-0   h-12 transition-all ease-in duration-200" />
-                    {/* gradient ends */}
-                </div>
+             <Skills></Skills>
                 <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 relative">
                     <div className=" absolute w-full p-2 z-20">
                         <p className="text-xs">Newsletter</p>
