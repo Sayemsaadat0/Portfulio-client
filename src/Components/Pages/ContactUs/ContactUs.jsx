@@ -1,6 +1,4 @@
-import { useForm } from "react-hook-form";
-import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa"
-import { Link } from "react-router-dom";
+/* import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import { useState } from "react";
@@ -37,7 +35,6 @@ const ContactUs = () => {
         <div id="contact" className="w-full px-2">
             <div className="lg:flex justify-around ">
 
-                {/* left side */}
                 <div className="md:w-1/2   mx-auto  mt-4">
                     <h2 className="text-3xl tracking-widest pb-4 text-center ">Get In Touch</h2>
                     <div className="font-bold  my-10 h-full">
@@ -55,7 +52,6 @@ const ContactUs = () => {
 
                     </div>
                 </div>
-                {/* right side */}
                 <div className="flex flex-col md:w-1/2 p-5">
                     <div>
                         <h2 className="text-3xl tracking-widest pb-4 text-center ">Send A Message</h2>
@@ -64,7 +60,6 @@ const ContactUs = () => {
                     <form className="mb-5 text-black" ref={form} onSubmit={handleSubmit(onSubmit)}>
 
                         <div className=" ">
-                            {/* Name */}
                             <div>
                                 <label className="label">
                                     <span className="label-text">
@@ -78,7 +73,6 @@ const ContactUs = () => {
                                     placeholder="Enter Your Name"
                                     {...register("name", { required: true })} />
                             </div>
-                            {/* email */}
                             <div>
                                 <label className="label">
                                     <span className="label-text">
@@ -93,7 +87,6 @@ const ContactUs = () => {
                                     {...register("email", { required: true })} />
                             </div>
                         </div>
-                        {/* subject */}
                         <div>
                             <label className="label">
                                 <span className="label-text">
@@ -107,7 +100,6 @@ const ContactUs = () => {
                                 placeholder="Subject of Message"
                                 {...register("subject", { required: true })} />
                         </div>
-                        {/* textarea */}
                         <div>
                             <label className="label">
                                 <span className="label-text">
@@ -136,6 +128,94 @@ const ContactUs = () => {
                 </div>
 
             </div>
+
+        </div>
+    );
+};
+
+export default ContactUs; */
+
+
+
+
+import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import { useState } from "react";
+
+
+const ContactUs = () => {
+    const [success, setSuccess] = useState(null);
+    const form = useRef();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const onSubmit = data => {
+
+        emailjs.sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, import.meta.env.VITE_YOUR_PUBLIC_KEY)
+            .then((result) => {
+                setSuccess(true)
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        console.log(data)
+        reset()
+    };
+
+    console.log(errors);
+    return (
+
+        <div id="contact" className="w-full px-2">
+
+            <form className="mb-5 text-black" ref={form} onSubmit={handleSubmit(onSubmit)}>
+
+
+
+                <input
+                    className="input w-full  border-black"
+                    type="text"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    {...register("name", { required: true })} />
+
+
+
+                <input
+                    className="input  w-full border-black"
+                    type="email"
+                    name="email"
+                    placeholder=" Enter Your Email"
+                    {...register("email", { required: true })} />
+
+
+
+
+                <input
+                    className="input  w-full border-black "
+                    type="text"
+                    name="subject"
+                    placeholder="Subject of Message"
+                    {...register("subject", { required: true })} />
+
+
+                <textarea
+                    className="textarea h-44   w-full border-black"
+                    name="message"
+                    placeholder="Message"
+                    {...register("message", { required: true })}></textarea>
+
+
+                <div className="flex justify-end mt-4 ">
+                    <button
+                        className="btn btn-neutral hover:bg-primary border-none  "
+                        type="submit">Send Message</button>
+                </div>
+
+            </form>
+            <p className="mt-5">
+                {
+                    success && "Your message has been sent. We'll get back to you soon!"
+                }
+            </p>
 
         </div>
     );

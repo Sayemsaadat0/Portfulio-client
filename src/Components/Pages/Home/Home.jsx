@@ -79,6 +79,7 @@ import Educations from './Educations';
 import Projects from './Projects';
 import SocialLinks from './SocialLinks';
 import Skills from './Skills';
+import Contact from './Contact';
 
 const Home = () => {
     return (
@@ -93,24 +94,14 @@ const Home = () => {
                         <div className="w-full h-[0.9px]      " />
                     </div>
                 </div>
-              <Mode></Mode>
-              <About></About>
-              <Educations></Educations>
-              <Projects></Projects>
-             <SocialLinks></SocialLinks>
-                <div className="dark:bg-[#1E1E1E] bg-white  overflow-hidden relative shadow-md rounded-lg min-h-[50px] col-span-2 row-span-3 md:row-span-2 ">
-                    <div className=" absolute w-full p-2 z-10">
-                        <div className="flex justify-between items-center ">
-                            <p className="text-xs">Latest Work</p>
-                            <p className="text-neutral-500 text-xs ">Waitlist</p>
-                        </div>
-                        <div className="w-full h-[0.4px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-                    </div>
-
-
-                </div>
-             <Skills></Skills>
-                <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 relative">
+                <Mode></Mode>
+                <About></About>
+                <Educations></Educations>
+                <Skills></Skills>
+                <Projects></Projects>
+                <Contact></Contact>
+                <SocialLinks></SocialLinks>
+                {/*    <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 relative">
                     <div className=" absolute w-full p-2 z-20">
                         <p className="text-xs">Newsletter</p>
                         <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
@@ -128,8 +119,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div
-                    className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 p-2"
-                >
+                    className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 p-2"  >
                     <div>
                         <p className="text-[10px] mt-8">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
@@ -145,8 +135,8 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="  rounded-lg  grid grid-cols-2 gap-2 col-span-2 row-span-2 z-40">
+                </div> */}
+                {/*  <div className="  rounded-lg  grid grid-cols-2 gap-2 col-span-2 row-span-2 z-40">
                     <div
                         drag
                         dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
@@ -179,7 +169,7 @@ const Home = () => {
                             </button>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );
