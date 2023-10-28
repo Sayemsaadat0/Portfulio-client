@@ -1,4 +1,4 @@
-import { BsArrowRight } from "react-icons/bs";
+/* import { BsArrowRight } from "react-icons/bs";
 import Hero from "../Hero/Hero";
 
 const Home = () => {
@@ -6,12 +6,11 @@ const Home = () => {
         <div>
             <Hero></Hero>
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center gap-4 py-10">
-                {/* image */}
                 <div className="w-44 rounded-xl shadow-lg overflow-hidden">
                     <img className="duration-700  hover:scale-105" src="/sayem.png" alt="" />
                 </div>
 
-                <div className="w-44 h-44 rounded-xl bg-white shadow-lg md:border p-4">
+                <div className=" rounded-xl bg-white shadow-lg md:border p-4">
                     <p className="text-gray-500 border-b-2 ">
                         mode
                     </p>
@@ -25,9 +24,13 @@ const Home = () => {
                 </div>
 
 
-                <div className="rounded-xl bg-white shadow-lg  p-4 border col-span-2">
+                <div className="rounded-xl bg-white shadow-lg text-justify p-2  border col-span-2 ">
                 <p className="text-gray-500 border-b-2 ">
-                        mode
+                        About
+                    </p>
+                    <p className="py-6">
+                        I am Abu Saadat Md. Sayem, a Frontend Developer. I am passionate about building user-friendly and visually apeallig web experiences. 
+                        I Have a strong foundamental in HTML, Css, Javascript, and I am proficient in using frontend framework like React js and Next js.
                     </p>
                 </div>
 
@@ -50,6 +53,196 @@ const Home = () => {
                 <div className="w-36 h-36 border border-black">div11</div>
                 <div className="w-36 h-36 border border-black">div12</div>
 
+            </div>
+        </div>
+    );
+};
+
+export default Home; */
+
+
+
+
+
+
+
+
+
+
+
+
+import React from 'react';
+import Hero from '../Hero/Hero';
+import Mode from './Mode';
+import About from './About';
+import Educations from './Educations';
+import Projects from './Projects';
+
+const Home = () => {
+    return (
+        <div className=" w-full  px-4  max-w-6xl mx-auto">
+            <Hero></Hero>
+            <div className="grid pt-4 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-5 grid-flow-row-dense">
+                <div className="z-20 overflow-hidden relative shadow-md rounded-lg sm:h-40">
+                    <div className=" w-full  ">
+                        <div className="flex justify-between items-center ">
+                            <img className='object-fill hover:scale-110 duration-700' src="/sayem.png" alt="" />
+                        </div>
+                        <div className="w-full h-[0.9px]      " />
+                    </div>
+                </div>
+              <Mode></Mode>
+              <About></About>
+              <Educations></Educations>
+              <Projects></Projects>
+                <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg min-h-[50px] col-span-2  relative">
+                    <div className=" absolute w-full p-2 z-20">
+                        <p className="text-xs">Get in touch</p>
+                        <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                    </div>
+
+                    <div className="mt-14 mb-4">
+                        <div className="flex justify-center gap-x-2 px-2">
+                        </div>
+                    </div>
+                </div>
+                <div className="dark:bg-[#1E1E1E] bg-white  overflow-hidden relative shadow-md rounded-lg min-h-[50px] col-span-2 row-span-3 md:row-span-2 ">
+                    <div className=" absolute w-full p-2 z-10">
+                        <div className="flex justify-between items-center ">
+                            <p className="text-xs">Latest Work</p>
+                            <p className="text-neutral-500 text-xs ">Waitlist</p>
+                        </div>
+                        <div className="w-full h-[0.4px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                    </div>
+
+
+                </div>
+                <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg col-span-2  relative  overflow-hidden  ">
+                    <div className=" absolute w-full p-2 z-20">
+                        <p className="text-xs">Side Projects</p>
+                        <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                    </div>
+
+                    {/* Gradient  */}
+                    <div className=" bg-gradient-to-b  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent   h-20 transition-all ease-in duration-200" />
+                    {/* gradient ends */}
+
+                    <div className=" overflow-y-auto h-[180px] overflow-hidden scrollbar-hide scroll-smooth relative ">
+                        {/* Starts */}
+                        <div className="flex gap-x-3 mt-14 px-2  ">
+                            <p className="dark:text-white  text-xs w-20 shrink-0  ">
+                                Since 2023
+                            </p>
+                            <div>
+                                <h4 className="text-xs font-bold">WebFlow</h4>
+                                <p className="text-[11px] text-neutral-500">Official partner</p>
+                            </div>
+                        </div>
+
+                        <div className="px-2 my-3 ">
+                            <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
+                        </div>
+
+                        <div className="flex  gap-x-3 px-2 relative ">
+                            <p className="text-white  text-xs w-20 shrink-0  ">Since 2021</p>
+                            <div>
+                                <h4 className="text-xs font-bold">Awwward</h4>
+                                <p className="text-[11px] text-neutral-500">Jury Member</p>
+                            </div>
+                        </div>
+
+                        <div className="px-2 my-3 ">
+                            <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
+                        </div>
+
+                        <div className="flex  gap-x-3  px-2 relative ">
+                            <p className="dark:text-white  text-xs w-20 shrink-0  ">
+                                Since 2018
+                            </p>
+                            <div>
+                                <h4 className="text-xs font-bold">ADC Club Global</h4>
+                                <p className="text-[11px] text-neutral-500">Jury Member</p>
+                            </div>
+                        </div>
+
+                        <div className="px-2 my-3 ">
+                            <div className="w-full h-[0.9px] dark:bg-neutral-800  bg-neutral-400/40 " />
+                        </div>
+                    </div>
+                    {/* Gradient  */}
+                    <div className=" bg-gradient-to-t  w-full absolute z-10 from-white via-white dark:from-[#1E1E1E] dark:via-[#1E1E1E] to-transparent bottom-0   h-12 transition-all ease-in duration-200" />
+                    {/* gradient ends */}
+                </div>
+                <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 relative">
+                    <div className=" absolute w-full p-2 z-20">
+                        <p className="text-xs">Newsletter</p>
+                        <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                    </div>
+
+                    <div className="mt-24 flex flex-col items-center w-full px-2 ">
+                        <input
+                            className=" w-full rounded-full text-sm p-1 placeholder:text-neutral-700 outline-none  pl-6 bg-neutral-900"
+                            type="email"
+                            placeholder="name@email.com"
+                        />
+                        <button className="text-xs  w-full    mt-2 rounded-full p-1 px-2 dark:bg-neutral-700/40">
+                            <span>Contact me</span>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 p-2"
+                >
+                    <div>
+                        <p className="text-[10px] mt-8">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                            optio vel officia.
+                        </p>
+
+                        <div className="flex items-center gap-x-2 mt-7">
+
+
+                            <div className="">
+                                <p className="text-xs">JoScript</p>
+                                <p className="text-xs">Founder, Joscript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="  rounded-lg  grid grid-cols-2 gap-2 col-span-2 row-span-2 z-40">
+                    <div
+                        drag
+                        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+                        dragElastic={1}
+                        className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  h-44 p-2 relative "
+                    >
+                        <div className=" absolute w-full p-2 z-20">
+                            <p className="text-xs">Years of Experience</p>
+                            <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                        </div>
+                        <div className="mt-10  w-full flex justify-center items-center">
+                            <h1 className="text-8xl">17</h1>
+                        </div>
+                    </div>
+                    <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 p-2 relative z-40">
+                        <div>
+                            <div className=" absolute w-full p-2 z-20">
+                                <p className="text-xs">CV</p>
+                                <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                            </div>
+                        </div>
+                        <div className="mt-24 w-full">
+                            <button className="text-xs flex w-full items-center justify-between    rounded-full p-1 px-2 dark:bg-neutral-700/40">
+                                <span>View</span>
+
+                            </button>
+                            <button className="text-xs flex w-full mt-3 items-center justify-between    rounded-full p-1 px-2 dark:bg-neutral-700/40">
+                                <span>Download</span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );
