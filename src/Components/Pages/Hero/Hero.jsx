@@ -1,9 +1,10 @@
 import Typewriter from 'typewriter-effect';
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 import { useQuery } from '@tanstack/react-query';
-import moment from 'moment';
+// import moment from 'moment';
 
 
+import { BsArrowRight } from 'react-icons/bs';
 
 const Hero = () => {
 
@@ -27,42 +28,31 @@ const Hero = () => {
     });
 
     return (
-        <div>
-            {/* name and title */}
+        <div className='md:flex justify-between text-center py-4 border-b-2'>
+            <div>
+                <h1 className='text-2xl font-bold'>Abu Saadat Md. Sayem</h1>
+                <p className='flex justify-center md:justify-start'>
+                    <Typewriter
+                        options={{
+                            strings: ['Frontend', 'React', 'Fullstack', 'MERN Stack', 'Javascript'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                    Developer
+                </p>
+            </div>
 
-
-            <div className='lg:flex justify-center items-end'>
-                <div className='whitespace-nowrap hidden md:block'>
-                    <p><span className='text-sm'>Date of Birth</span> : <br />April 26th,1999  </p>
-                    <p className='text-sm'>Country:  Bangladesh  </p>
-                </div>
-
-                <div className="w-full py-5 ">
-                    <div className='title'>
-                        <h1 className="text-3xl md:text-6xl font-bold titleText  text-center  whitespace-nowrap">Abu Saadat Md. Sayem</h1>
-                        <h1 className="text-3xl md:text-6xl font-bold titleText  text-center  whitespace-nowrap">Abu Saadat Md. Sayem</h1>
-                    </div>
-                    <p className='flex justify-center text-3xl md:pt-20 pt-12'>
-                        <Typewriter
-                            options={{
-                                strings: ['Frontend', 'Javascript', 'React js', 'Next js'],
-                                autoStart: true,
-                                loop: true,
-                            }}
-                        />
-                        Developer
-                    </p>
-                </div>
-
-                <div className='hidden lg:block text-xl whitespace-nowrap'>
-                    {moment().format("MMM Do YYYY")}
-                </div>
+            <div className=' py-3 group items-center justify-center '>
+                <a className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border dark:bg-neutral-700/40 ' download={true} href="/resume.pdf">Download Resume
+                <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
+                </a>
             </div>
 
 
 
             {/* Quotes */}
-            <div className='border-t-2 border-b-2 py-2'>
+   {/*          <div className='border-t-2 border-b-2 py-2'>
                 <Marquee>
                     {quotesData ? (
                         quotesData.map((data, index) => (
@@ -75,7 +65,7 @@ const Hero = () => {
                         <p>Loading or data not found</p>
                     )}
                 </Marquee>
-            </div>
+            </div> */}
         </div>
     );
 };

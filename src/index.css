@@ -2,85 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-.titleText{
-  font-family: 'Abril Fatface', serif;
-}
-
-::selection {
-  color: white;
-  background-color: #6cbdcd;
-}
-
-
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-p {
-  font-size: larger;
+.imageDiv {
+  height: 200px;
+  background-image: url("/tripsure.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 8s;
+  border-radius: 20px;
 }
 
-.active {
-  text-decoration: underline;
+.imageDiv:hover{
+  background-position: bottom;
 }
 
-.heroBg {
-  background-image: url("https://i.ibb.co/QJC4rjc/source.png");
+.image {
+  background-image: url("/sayem.png");
+  height: 150px;
+  width: 150px;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* filter: grayscale(100%); */
+  box-shadow: inset 0 0 0 9px rgb(255, 255, 255/ 30%);
+  animation: animate 6s ease-in-out infinite;
 }
 
-/* title */
-.title{
-  position: relative;
+/* .image:hover{
+  filter: grayscale(0%);
+  transition: 1s ;
 }
-
-.title h1{
-  position: absolute;
-  left: 25%;
-}
-
-.title h1:nth-child(1){
-  color: transparent;
-  -webkit-text-stroke: 0.1px black;
-}
-.title h1:nth-child(2){
-  color: black;
-animation: animate 1.5s ease-in-out infinite;
-}
-
+ */
 @keyframes animate {
-  0%, 100%{
-    clip-path: polygon(0% 53%, 18% 48%, 40% 48%, 60% 53%, 79% 53%, 100% 45%, 100% 99%, 0% 99%);
-  }  
-  50%{
-    clip-path: polygon(99% 48%, 85% 45%, 67% 45%, 57% 49%, 39% 53%, 24% 55%, 12% 53%, 1% 46%, 1% 100%, 99% 100%);
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
-
-
-
-
-
-
-
-
-
- 
-@media (max-width: 620px) {
-  .title h1 {
-    left: 50%; 
-    transform: translateX(-50%);  }
-} 
