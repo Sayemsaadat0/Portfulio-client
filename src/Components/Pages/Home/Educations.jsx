@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const Educations = () => {
     return (
-        <motion.div   className="  bg-white  shadow-md rounded-lg   col-span-2  duration-700 hover:shadow-lg border hover:scale-105 relative ">
+        <div   className="  bg-white  shadow-md rounded-lg   col-span-2  duration-700 hover:shadow-lg border hover:scale-105 relative ">
             <div className=" w-full p-2 z-20">
                 <p >Educations</p>
                 <div className="w-full h-[0.9px]  bg-neutral-400/60 mt-1   " />
@@ -39,7 +39,7 @@ const Educations = () => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

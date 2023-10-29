@@ -16,7 +16,7 @@ import { motion } from "framer-motion"
 
 const Skills = () => {
     return (
-        <motion.div    className=" bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
+        <div    className=" bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
             <div className="p-2">
                 <p className="">Skills</p>
                 <div className=" h-[0.9px]  bg-neutral-400/60 mt-1 top-7  " />
@@ -45,7 +45,7 @@ const Skills = () => {
 
 
 
-        </motion.div>
+        </div>
     );
 };
 
