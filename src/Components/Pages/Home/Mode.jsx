@@ -3,7 +3,7 @@ const Mode = () => {
     return (
         <motion.div   drag
         dragConstraints={{left: 0, top: 0, right:0 , bottom: 0}}
-        className="dark:bg-[#1E1E1E] bg-white duration-700 hover:shadow-lg border hover:scale-105 rounded-lg h-44">
+        className=" bg-white duration-700 hover:shadow-lg border hover:scale-105 rounded-lg h-44">
             <div className=" w-full p-2">
                 <div className="flex justify-between items-center ">
                     <p >Mode</p>
