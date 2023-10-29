@@ -9,7 +9,7 @@ const SocialLinks = () => {
             <div className="  p-2 ">
                 <p className="">Get in touch</p>
 
-                <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                <div className="w-full h-[0.9px]  bg-neutral-400/60 mt-1 top-7  " />
             </div>
 
             <div className='my-2 px-2 flex flex-col gap-2 bg-white'>
@@ -19,7 +19,7 @@ const SocialLinks = () => {
                 <p className='text-sm flex items-center gap-2 font-bold'><MdEmail className='text-xl'></MdEmail> sayemsaadat0@gmail.com</p>
             </div>
 
-            <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+            <div className="w-full h-[0.9px]  bg-neutral-400/60 mt-1 top-7  " />
 
             <div className="my-4 flex items-center justify-between px-4">
                 <div className="flex justify-center gap-x-2 px-2">

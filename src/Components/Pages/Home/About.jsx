@@ -3,15 +3,13 @@ import { motion } from "framer-motion"
 const About = () => {
     return (
         <motion.div
-            drag
-            dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
             className=" bg-white cursor-pointer relative shadow-md rounded-lg  col-span-2 duration-700 hover:shadow-lg border hover:scale-105" >
             <div className=" absolute w-full p-2">
                 <div className="flex justify-between items-center ">
                     <p >About</p>
-                    <p className="text-neutral-500 text-sm">Abu Saadat Md. Sayem</p>
+                    <p className=" text-sm">Abu Saadat Md. Sayem</p>
                 </div>
-                <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                <div className="w-full h-[0.9px]  bg-neutral-400/60 mt-1 top-7  " />
             </div>
 
             <div className="mt-14 px-3 pb-3">

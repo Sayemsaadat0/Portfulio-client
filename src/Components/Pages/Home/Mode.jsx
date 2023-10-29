@@ -11,12 +11,12 @@ const Mode = () => {
                         <span>
                             <span className="mr-1.5 flex justify-center h-2 w-2 items-center ">
                                 <span
-                                    className={`flex  w-2 h-2 rounded-full  opacity-75 animation-delay-4000 animate-ping dark:bg-lime-500 bg-green-500`}></span>
+                                    className={`flex  w-2 h-2 rounded-full  opacity-75 animation-delay-4000 animate-ping bg-green-500`}></span>
                             </span>
                         </span>
                     </div>
                 </div>
-                <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
+                <div className="w-full h-[0.9px]  bg-neutral-400/60 mt-1 top-7  " />
                 <div className="">
                     <p className="text-xs font-semibold text-justify sm:mt-4 mt-3  ">
                        Let's collaborate and build a future where everyone has the opportunity to reach their full potential.🌟🙌

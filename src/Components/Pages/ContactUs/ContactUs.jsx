@@ -198,7 +198,7 @@ const ContactUs = () => {
 
 
                 <div className='group flex '>
-                    <button className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border dark:bg-neutral-700/40'>Send Message
+                    <button className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border '>Send Message
                         <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
                     </button>
                 </div>
