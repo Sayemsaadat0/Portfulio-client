@@ -16,7 +16,7 @@ import Location from './locaation';
 
 const Home = () => {
     return (
-        <div className=" w-full  px-4  max-w-6xl mx-auto">
+        <div className=" w-full   px-4  max-w-6xl mx-auto">
             <Hero></Hero>
             <div className="grid pt-4 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-5 grid-flow-row-dense">
                 <Banner></Banner>

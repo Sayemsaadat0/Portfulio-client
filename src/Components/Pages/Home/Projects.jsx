@@ -24,7 +24,7 @@ const Projects = () => {
                     <Link to={'https://tripsure-client.web.app/'} className='px-2'>
                         <div className='imageDiv '>
                         </div>
-                        <div className='overflow-y-auto h-[200px] px-2'>
+                        <div className='overflow-y-auto scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin h-[200px] px-2'>
                             <div className='py-2'>
                                 <p className='font-bold'>Title : Tripsures</p>
                                 <p className='text-sm'>Project Type : Online Tourist Management Portals</p>
