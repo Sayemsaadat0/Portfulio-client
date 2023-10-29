@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 const Location = () => {
     return (
-        <div className="rounded-lg md:col-span-4 col-span-2  row-span-4 px-2">
+        <div className="rounded-lg md:col-span-4 col-span-2 pb-6 row-span-4 px-2">
             <div
                 className="  bg-white shadow-md rounded-lg h-44 w-80 md:w-full overflow-auto scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin">
                 <div className="w-full flex justify-center items-center border ">
