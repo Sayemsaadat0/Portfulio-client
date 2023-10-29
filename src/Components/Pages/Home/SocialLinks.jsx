@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md'
 import { motion } from "framer-motion"
 const SocialLinks = () => {
     return (
-        <motion.div drag className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  col-span-2 flex flex-col justify-between duration-700 hover:shadow-lg border hover:scale-105">
+        <motion.div  className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  col-span-2 flex flex-col justify-between duration-700 hover:shadow-lg border hover:scale-105">
             <div className="  p-2 ">
                 <p className="">Get in touch</p>
 

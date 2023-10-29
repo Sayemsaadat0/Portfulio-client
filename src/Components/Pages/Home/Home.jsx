@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react';
 import Hero from '../Hero/Hero';
 import Mode from './Mode';

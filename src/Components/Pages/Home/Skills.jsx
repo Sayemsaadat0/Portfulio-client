@@ -16,7 +16,8 @@ import { motion } from "framer-motion"
 
 const Skills = () => {
     return (
-        <motion.div drag className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
+        <motion.div  drag
+        dragConstraints={{left: 0, top: 0, right:0 , bottom: 0}}  className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
             <div className="p-2">
                 <p className="">Skills</p>
                 <div className=" h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
