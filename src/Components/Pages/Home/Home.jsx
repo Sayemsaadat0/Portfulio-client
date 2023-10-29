@@ -80,96 +80,29 @@ import Projects from './Projects';
 import SocialLinks from './SocialLinks';
 import Skills from './Skills';
 import Contact from './Contact';
+import Banner from './Banner';
+import Countup from './Countup';
+import Certificate from './Certificate';
+import Blogs from './Blogs';
+import Noname from './Noname';
 
 const Home = () => {
     return (
         <div className=" w-full  px-4  max-w-6xl mx-auto">
             <Hero></Hero>
             <div className="grid pt-4 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-5 grid-flow-row-dense">
-                <div className="z-20 overflow-hidden relative shadow-md rounded-lg sm:h-40">
-                    <div className=" w-full  ">
-                        <div className="flex justify-between items-center image">
-                            {/* <img className='object-fill hover:scale-110 duration-700' src="/sayem.png" alt="" /> */}
-                        </div>
-                        <div className="w-full h-[0.9px]      " />
-                    </div>
-                </div>
+                <Banner></Banner>
                 <Mode></Mode>
                 <About></About>
+                <Countup></Countup>
+                <Certificate></Certificate>
                 <Educations></Educations>
                 <Skills></Skills>
                 <Projects></Projects>
                 <Contact></Contact>
                 <SocialLinks></SocialLinks>
-                {/*    <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 relative">
-                    <div className=" absolute w-full p-2 z-20">
-                        <p className="text-xs">Newsletter</p>
-                        <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-                    </div>
-
-                    <div className="mt-24 flex flex-col items-center w-full px-2 ">
-                        <input
-                            className=" w-full rounded-full text-sm p-1 placeholder:text-neutral-700 outline-none  pl-6 bg-neutral-900"
-                            type="email"
-                            placeholder="name@email.com"
-                        />
-                        <button className="text-xs  w-full    mt-2 rounded-full p-1 px-2 dark:bg-neutral-700/40">
-                            <span>Contact me</span>
-                        </button>
-                    </div>
-                </div>
-                <div
-                    className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 p-2"  >
-                    <div>
-                        <p className="text-[10px] mt-8">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
-                            optio vel officia.
-                        </p>
-
-                        <div className="flex items-center gap-x-2 mt-7">
-
-
-                            <div className="">
-                                <p className="text-xs">JoScript</p>
-                                <p className="text-xs">Founder, Joscript</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-                {/*  <div className="  rounded-lg  grid grid-cols-2 gap-2 col-span-2 row-span-2 z-40">
-                    <div
-                        drag
-                        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-                        dragElastic={1}
-                        className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  h-44 p-2 relative "
-                    >
-                        <div className=" absolute w-full p-2 z-20">
-                            <p className="text-xs">Years of Experience</p>
-                            <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-                        </div>
-                        <div className="mt-10  w-full flex justify-center items-center">
-                            <h1 className="text-8xl">17</h1>
-                        </div>
-                    </div>
-                    <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 p-2 relative z-40">
-                        <div>
-                            <div className=" absolute w-full p-2 z-20">
-                                <p className="text-xs">CV</p>
-                                <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
-                            </div>
-                        </div>
-                        <div className="mt-24 w-full">
-                            <button className="text-xs flex w-full items-center justify-between    rounded-full p-1 px-2 dark:bg-neutral-700/40">
-                                <span>View</span>
-
-                            </button>
-                            <button className="text-xs flex w-full mt-3 items-center justify-between    rounded-full p-1 px-2 dark:bg-neutral-700/40">
-                                <span>Download</span>
-
-                            </button>
-                        </div>
-                    </div>
-                </div> */}
+                <Noname></Noname>
+  
             </div>
         </div>
     );

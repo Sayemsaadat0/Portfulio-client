@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import Buttons from '../Shared/Buttons';
 
 const Projects = () => {
     return (
@@ -14,7 +15,7 @@ const Projects = () => {
                 <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
 
-            <Swiper 
+            <Swiper
                 pagination={{
                     dynamicBullets: true,
                 }}
@@ -22,69 +23,31 @@ const Projects = () => {
                 className="mySwiper"
             >
                 <SwiperSlide >
-                    <div className='py-4 px-2'>
-                        <img className='rounded-lg' src="https://i.pinimg.com/564x/ab/36/40/ab36409c1701081ee1838556eee67e79.jpg" alt="" />
-                        <div className='overflow-y-auto h-[200px] '>
+                    <Link to={'https://tripsure-client.web.app/'} className='py-4 px-2'>
+                        <div className='imageDiv '>
+                        </div>
+                        <div className='overflow-y-auto h-[200px] px-2'>
                             <div className='py-2'>
-                                <p>Title : Tripsure</p>
-                                <p className='text-sm'>Online Tourist Management Portals</p>
+                                <p className='font-bold'>Title : Tripsure</p>
+                                <p className='text-sm'>Project Type : Online Tourist Management Portals</p>
                             </div>
-                            <p className='text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fuga sunt hic nisi obcaecati, quam pariatur voluptatibus aliquam harum sint quia quis iurem est vel itaque fugiat, in iste accusantium nam cumque?</p>
-                            <p className='text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fuga sunt hic nisi obcaecati, quam pariatur voluptatibus aliquam harum sint quia quis iurem est vel itaque fugiat, in iste accusantium nam cumque?</p>
-                            <p className='text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fuga sunt hic nisi obcaecati, quam pariatur voluptatibus aliquam harum sint quia quis iurem est vel itaque fugiat, in iste accusantium nam cumque?</p>
+                            <p className='text-sm text-justify'>Plan your perfect trip with our travel website. Explore destinations, book adventures, and turn your travel dreams into reality</p>
+                            <p className='text-sm text-justify py-4'>Tools : React, Node, Mongodb, Firebase, Tailwind, Ant Design, Daisy ui, Redux toolkit, Stripe.</p>
+                            <p className='text-sm text-justify list-disc'>
+                                Features :
+                                <li>Easily search for destinations, select travel dates, and choose the number of people in your group to plan your adventure.</li>
+                                <li>Enjoy features like weather information, secure authentication, a customizable AI chatbot , a messenger chat box, places by category and top visited destinations. </li>
+                                <li>Safely book packages and offers with SSL Commerce and Stripe payment integration, while admins have full control through a dedicated dashboard.</li>
+                            </p>
 
                             <div className='flex justify-between'>
-                                <div className=' group items-center justify-center '>
-                                    <Link to='/' className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 '>Live Site
-                                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
-                                    </Link>
-                                </div>
-                                <div className=' group items-center justify-center '>
-                                    <Link to='/' className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 '>Client Side
-                                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
-                                    </Link>
-                                </div>
-                                <div className=' group items-center justify-center '>
-                                    <Link to='/' className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 '>Server Side
-                                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
-                                    </Link>
-                                </div>
+                                <Buttons to={'https://tripsure-client.web.app/'} text={'Live Site'}></Buttons>
+                                <Buttons to={'https://github.com/Sayemsaadat0/tripsure-client'} text={'Client Site'}></Buttons>
+                                <Buttons to={'https://github.com/Sayemsaadat0/tripsure-server'} text={'Server Site'}></Buttons>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 </SwiperSlide>
-                <SwiperSlide >
-                    <div className='py-4 px-2'>
-                        <img className='rounded-lg' src="https://i.pinimg.com/564x/ab/36/40/ab36409c1701081ee1838556eee67e79.jpg" alt="" />
-                        <div className='overflow-y-auto h-[200px] '>
-                            <div className='py-2'>
-                                <p>Title : Tripsure</p>
-                                <p className='text-sm'>Online Tourist Management Portals</p>
-                            </div>
-                            <p className='text-sm text-justify'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit fuga sunt hic nisi obcaecati, quam pariatur voluptatibus aliquam harum sint quia quis iurem est vel itaque fugiat, in iste accusantium nam cumque?</p>
-
-                            <div className='flex justify-between'>
-                                <div className=' group items-center justify-center '>
-                                    <Link to='/' className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 '>Live Site
-                                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
-                                    </Link>
-                                </div>
-                                <div className=' group items-center justify-center '>
-                                    <Link to='/' className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 '>Client Side
-                                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
-                                    </Link>
-                                </div>
-                                <div className=' group items-center justify-center '>
-                                    <Link to='/' className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 '>Server Side
-                                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </SwiperSlide>
-         
-
             </Swiper>
         </div>
     );

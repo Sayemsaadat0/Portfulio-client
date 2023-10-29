@@ -67,7 +67,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input w-full  border-black"
+                                    className="input w-full  border"
                                     type="text"
                                     name="name"
                                     placeholder="Enter Your Name"
@@ -80,7 +80,7 @@ const ContactUs = () => {
                                     </span>
                                 </label>
                                 <input
-                                    className="input  w-full border-black"
+                                    className="input  w-full border"
                                     type="email"
                                     name="email"
                                     placeholder=" Enter Your Email"
@@ -94,7 +94,7 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <input
-                                className="input  w-full border-black "
+                                className="input  w-full border "
                                 type="text"
                                 name="subject"
                                 placeholder="Subject of Message"
@@ -107,7 +107,7 @@ const ContactUs = () => {
                                 </span>
                             </label>
                             <textarea
-                                className="textarea h-44   w-full border-black"
+                                className="textarea h-44   w-full border"
                                 name="message"
                                 placeholder="Message"
                                 {...register("message", { required: true })}></textarea>
@@ -142,6 +142,7 @@ import { useForm } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
 import { useState } from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 
 const ContactUs = () => {
@@ -164,33 +165,25 @@ const ContactUs = () => {
     console.log(errors);
     return (
 
-        <div id="contact" className="w-full px-2">
+        <div id="contact" className="w-full  ">
 
-            <form className="mb-5 text-black" ref={form} onSubmit={handleSubmit(onSubmit)}>
-
-
-
+            <form className="mt-5 text-black flex flex-col gap-2" ref={form} onSubmit={handleSubmit(onSubmit)}>
                 <input
-                    className="input w-full  border-black"
+                    className="input  border-gray-300 w-full  "
                     type="text"
                     name="name"
                     placeholder="Enter Your Name"
                     {...register("name", { required: true })} />
 
-
-
                 <input
-                    className="input  w-full border-black"
+                    className="input border-gray-300 w-full border"
                     type="email"
                     name="email"
                     placeholder=" Enter Your Email"
                     {...register("email", { required: true })} />
 
-
-
-
                 <input
-                    className="input  w-full border-black "
+                    className="input border-gray-300 w-full border "
                     type="text"
                     name="subject"
                     placeholder="Subject of Message"
@@ -198,22 +191,22 @@ const ContactUs = () => {
 
 
                 <textarea
-                    className="textarea h-44   w-full border-black"
+                    className="textarea h-36  border-gray-300 w-full border"
                     name="message"
                     placeholder="Message"
                     {...register("message", { required: true })}></textarea>
 
 
-                <div className="flex justify-end mt-4 ">
-                    <button
-                        className="btn btn-neutral hover:bg-primary border-none  "
-                        type="submit">Send Message</button>
+                <div className='group flex '>
+                    <button className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border dark:bg-neutral-700/40'>Send Message
+                        <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
+                    </button>
                 </div>
 
             </form>
             <p className="mt-5">
                 {
-                    success && "Your message has been sent. We'll get back to you soon!"
+                    success && "Your message has been sent"
                 }
             </p>
 

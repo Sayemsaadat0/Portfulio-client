@@ -9,34 +9,51 @@
   font-family: "Poppins", sans-serif;
 }
 ::selection {
-  background-color: rgba(0, 255, 255, 0.337);
+  background-color: black;
+  color: white;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
 
+.imageDiv {
+  height: 200px;
+  background-image: url("/tripsure.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 8s;
+  border-radius: 20px;
+}
 
+.imageDiv:hover{
+  background-position: bottom;
+}
 
-.image{
-  background-image: url('/sayem.png');
+.image {
+  background-image: url("/sayem.png");
   height: 150px;
   width: 150px;
   background-size: cover;
   background-repeat: no-repeat;
+  /* filter: grayscale(100%); */
   box-shadow: inset 0 0 0 9px rgb(255, 255, 255/ 30%);
-  animation: animate 6s ease-in-out infinite ;
+  animation: animate 6s ease-in-out infinite;
 }
 
-@keyframes animate{
-  0%{
+/* .image:hover{
+  filter: grayscale(0%);
+  transition: 1s ;
+}
+ */
+@keyframes animate {
+  0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
-  50%{
-    border-radius:  30% 60% 70% 40%  / 50% 60% 30% 60%;
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
-  100%{
-    border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
- 
 }

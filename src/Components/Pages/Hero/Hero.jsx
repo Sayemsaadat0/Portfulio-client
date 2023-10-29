@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
 
             <div className=' py-3 group items-center justify-center '>
-                <a className='text-xs flex w-full  justify-center items-center gap-1  mt-3 rounded-full p-1 px-2 border dark:bg-neutral-700/40 ' download={true} href="/resume.pdf">Download Resume
+                <a className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border dark:bg-neutral-700/40 ' download={true} href="/resume.pdf">Download Resume
                 <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
                 </a>
             </div>

@@ -6,19 +6,15 @@ const About = () => {
             className="dark:bg-[#1E1E1E] bg-white   z-20 cursor-pointer relative shadow-md rounded-lg  col-span-2 " >
             <div className=" absolute w-full p-2 z-10">
                 <div className="flex justify-between items-center ">
-                    <p className="text-xs">About</p>
-                    <p className="text-neutral-500 text-xs ">Joscript Stone</p>
+                    <p >About</p>
+                    <p className="text-neutral-500 text-sm">Abu Saadat Md. Sayem</p>
                 </div>
                 <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
 
             <div className="mt-14 px-3 pb-3">
-                <p className="text-xs font-semibold   leading-5">
-                    Am Joscript Stone, an adventurous Creative Director based in the
-                    vibrant city of San Francisco. With a keen eye for aesthetics, a
-                    passion for innovation, and a drive for designs that leaves a
-                    lasting impact. let's collaborate and bring your creative visions
-                    to life..
+                <p className="text-xs font-semibold   leading-5 text-justify">
+                    Am Abu Saadat Md. Sayem,a Frontend Developer from Naaogaon, Bangladesh. with a strong desire to make a difference in the world through the power of web design, by creating websites that are both beautiful and functional, and that help people achieve their goals.
                 </p>
             </div>
         </div>
@@ -26,3 +22,8 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
+
