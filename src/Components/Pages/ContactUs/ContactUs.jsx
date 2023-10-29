@@ -165,7 +165,7 @@ const ContactUs = () => {
     console.log(errors);
     return (
 
-        <div id="contact" className="w-full  ">
+        <div id="contact" className="w-full bg-white ">
 
             <form className="mt-5 text-black flex flex-col gap-2" ref={form} onSubmit={handleSubmit(onSubmit)}>
                 <input

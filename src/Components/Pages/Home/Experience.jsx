@@ -1,8 +1,9 @@
 import CountUp from 'react-countup';
-const Countup = () => {
+import { motion } from "framer-motion"
+const Experience = () => {
     return (
-        <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 ">
-            <div className=" w-full p-2 z-20">
+        <motion.div drag className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg h-44 duration-700 hover:shadow-lg border hover:scale-105">
+            <div className=" w-full p-2 ">
                 <p >Experience</p>
                 <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
@@ -11,8 +12,8 @@ const Countup = () => {
                 <p className='font-bold text-7xl'><CountUp start={2} duration={1} end={10} />+</p>
             </div>
 
-        </div>
+        </motion.div>
     );
 };
 
-export default Countup;
+export default Experience;

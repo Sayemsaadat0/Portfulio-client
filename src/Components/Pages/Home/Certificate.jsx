@@ -1,10 +1,10 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
-
+import { motion } from "framer-motion"
 const Certificate = () => {
     return (
-        <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg z-20 h-44 ">
-            <div className=" w-full p-2 z-20">
+        <motion.div drag className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  h-44 duration-700 hover:shadow-lg border hover:scale-105">
+            <div className=" w-full p-2 ">
                 <p >Certifications</p>
                 <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
@@ -20,7 +20,7 @@ const Certificate = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
 };
 

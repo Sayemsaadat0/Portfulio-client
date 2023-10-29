@@ -1,14 +1,12 @@
-import React from 'react';
+import { motion } from "framer-motion"
 
 const Banner = () => {
     return (
-        <div className="overflow-hidden  shadow-md rounded-lg  h-40">
-        <div className=" w-full  ">
-            <div className="flex justify-between items-center image">
-                {/* <img className='object-fill hover:scale-110 duration-700 grayscale hover:grayscale-0' src="/sayem.png" alt="" /> */}
+        <motion.div drag className="rounded-lg overflow-hidden">
+            <div className="flex justify-between items-center ">
+                <img className='object-cover hover:scale-105 shadow-lg rounded-lg h-44 duration-700 ' src="/sayem.png" alt="" />
             </div>
-        </div>
-    </div>
+    </motion.div>
     );
 };
 

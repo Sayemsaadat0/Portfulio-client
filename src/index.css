@@ -23,10 +23,9 @@ a {
   background-size: cover;
   background-position: top;
   transition: ease-in-out 8s;
-  border-radius: 20px;
 }
 
-.imageDiv:hover{
+.imageDiv:hover {
   background-position: bottom;
 }
 

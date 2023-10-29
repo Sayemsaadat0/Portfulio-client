@@ -11,12 +11,13 @@ import firebase from '/9.png'
 import express from '/10.png'
 import node from '/11.png'
 import github from '/12.png'
+import { motion } from "framer-motion"
 
 
 const Skills = () => {
     return (
-        <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg col-span-2">
-            <div className=" p-2 z-20">
+        <motion.div drag className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
+            <div className="p-2">
                 <p className="">Skills</p>
                 <div className=" h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
@@ -44,7 +45,7 @@ const Skills = () => {
 
 
 
-        </div>
+        </motion.div>
     );
 };
 

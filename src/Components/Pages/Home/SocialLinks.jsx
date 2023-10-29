@@ -2,16 +2,17 @@ import {  FaWhatsapp, FaLocationDot, FaLinkedinIn, FaGithub } from 'react-icons/
 import { FaUserCircle } from 'react-icons/fa'
 import { BsFacebook } from 'react-icons/bs'
 import { MdEmail } from 'react-icons/md'
+import { motion } from "framer-motion"
 const SocialLinks = () => {
     return (
-        <div className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  col-span-2 flex flex-col justify-between ">
-            <div className="  p-2 z-20">
+        <motion.div drag className="dark:bg-[#1E1E1E] bg-white  shadow-md rounded-lg  col-span-2 flex flex-col justify-between duration-700 hover:shadow-lg border hover:scale-105">
+            <div className="  p-2 ">
                 <p className="">Get in touch</p>
 
                 <div className="w-full h-[0.9px] dark:bg-neutral-600 bg-neutral-400/60 mt-1 top-7  " />
             </div>
 
-            <div className='my-2 px-2 flex flex-col gap-2'>
+            <div className='my-2 px-2 flex flex-col gap-2 bg-white'>
                 <p className='text-sm flex items-center gap-2 font-bold'><FaUserCircle className='text-xl'></FaUserCircle> Abu Saadat Md. Sayem</p>
                 <p className='text-sm flex items-center gap-2 font-bold'><FaLocationDot className='text-xl'></FaLocationDot> Naogaon, Bangladesh</p>
                 <p className='text-sm flex items-center gap-2 font-bold'><FaWhatsapp className='text-xl'></FaWhatsapp> +8801521574741</p>
@@ -37,7 +38,7 @@ const SocialLinks = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 
