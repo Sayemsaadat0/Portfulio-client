@@ -30,7 +30,6 @@ const Home = () => {
                 <Contact></Contact>
                 <SocialLinks></SocialLinks>
                <Location></Location>
-
             </div>
         </div>
     );
