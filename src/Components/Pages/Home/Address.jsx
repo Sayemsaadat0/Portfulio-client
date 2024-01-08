@@ -1,5 +1,6 @@
-import { motion } from "framer-motion"
-const Locaation = () => {
+import React from 'react';
+
+const Address = () => {
     return (
         <div className="rounded-lg md:col-span-4 col-span-2 pb-6 row-span-4 px-2">
             <div
@@ -20,4 +21,4 @@ const Locaation = () => {
     );
 };
 
-export default Locaation;
+export default Address;
