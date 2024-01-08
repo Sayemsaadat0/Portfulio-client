@@ -10,7 +10,7 @@ import Contact from './Contact';
 import Banner from './Banner';
 import Certificate from './Certificate';
 import Experience from './Experience';
-// import Locaation from './locaation';
+import Locaation from './locaation';
 
 const Home = () => {
     return (
@@ -27,7 +27,7 @@ const Home = () => {
                 <Projects></Projects>
                 <Contact></Contact>
                 <SocialLinks></SocialLinks>
-                {/* <Locaation></Locaation> */}
+                <Locaation></Locaation>
             </div>
         </div>
     );
