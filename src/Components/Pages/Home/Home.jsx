@@ -12,7 +12,7 @@ import Banner from './Banner';
 import Certificate from './Certificate';
 
 import Experience from './Experience';
-import Location from './locaation';
+import Locaation from './locaation';
 
 const Home = () => {
     return (
@@ -29,7 +29,7 @@ const Home = () => {
                 <Projects></Projects>
                 <Contact></Contact>
                 <SocialLinks></SocialLinks>
-               <Location></Location>
+               <Locaation></Locaation>
             </div>
         </div>
     );

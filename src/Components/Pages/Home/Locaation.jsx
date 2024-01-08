@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-const Location = () => {
+const Locaation = () => {
     return (
         <div className="rounded-lg md:col-span-4 col-span-2 pb-6 row-span-4 px-2">
             <div
@@ -20,4 +20,4 @@ const Location = () => {
     );
 };
 
-export default Location;
+export default Locaation;
