@@ -12,12 +12,8 @@ const Main = () => {
                         alt="whatsapp"
                     />
                 </a>
-                {/* <a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX"> <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.png" />
-                    <a /> */}
             </div>
-            {/* <Link to={'https://wa.me/01521574741'}>
-                <img src=""/>
-            </Link> */}
+
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footar></Footar>
