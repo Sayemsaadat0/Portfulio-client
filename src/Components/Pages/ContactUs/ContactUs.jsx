@@ -206,7 +206,7 @@ const ContactUs = () => {
             </form>
             <p className="mt-5">
                 {
-                    success && "Your message has been sent"
+                    success && "Your message has been sent successfully"
                 }
             </p>
 
