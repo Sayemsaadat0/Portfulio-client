@@ -16,7 +16,7 @@ import { motion } from "framer-motion"
 
 const Skills = () => {
     return (
-        <div    className=" bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
+        <div className=" bg-white  shadow-md rounded-lg col-span-2 duration-700 hover:shadow-lg border hover:scale-105">
             <div className="p-2">
                 <p className="">Skills</p>
                 <div className=" h-[0.9px]  bg-neutral-400/60 mt-1 top-7  " />
@@ -24,14 +24,12 @@ const Skills = () => {
 
             <div className="px-2">
                 <Marquee className="py-1">
-                     <img className="w-1/2 border rounded-full p-2" src={html} alt="" />
+                    <img className="w-1/2 border rounded-full p-2" src={html} alt="" />
                     <img className="w-1/2 border rounded-full p-2" src={css} alt="" />
                     <img className="w-1/2 border rounded-full p-2" src={bootstrap} alt="" />
                     <img className="w-1/2 border rounded-full p-2" src={tailwind} alt="" />
                     <img className="w-1/2 border rounded-full p-2" src={javascript} alt="" />
-                    <img className="w-1/2 border rounded-full p-2" src={react} alt="" /> 
-
-
+                    <img className="w-1/2 border rounded-full p-2" src={react} alt="" />
                 </Marquee>
                 <Marquee className="py-2 " direction="right">
                     <img className="w-1/2 border rounded-full p-2" src={next} alt="" />

@@ -1,11 +1,10 @@
-import {  FaWhatsapp, FaLocationDot, FaLinkedinIn, FaGithub } from 'react-icons/fa6'
+import { FaWhatsapp, FaLocationDot, FaLinkedinIn, FaGithub } from 'react-icons/fa6'
 import { FaUserCircle } from 'react-icons/fa'
-import { BsFacebook } from 'react-icons/bs'
+import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from 'react-icons/md'
-import { motion } from "framer-motion"
 const SocialLinks = () => {
     return (
-        <div  className=" bg-white  shadow-md rounded-lg  col-span-2 flex flex-col justify-between duration-700 hover:shadow-lg border hover:scale-105">
+        <div className=" bg-white  shadow-md rounded-lg  col-span-2 flex flex-col justify-between duration-700 hover:shadow-lg border hover:scale-105">
             <div className="  p-2 ">
                 <p className="">Get in touch</p>
 
@@ -33,8 +32,8 @@ const SocialLinks = () => {
                     </a>
                 </div>
                 <div className="flex justify-center gap-x-2 px-2">
-                    <a target='blank' href="https://www.facebook.com/Bilatindur">
-                        <BsFacebook className='text-5xl hover:scale-105 duration-500 rounded-full border hover:shadow-2xl shadow border-gray-300 p-1'></BsFacebook>
+                    <a target='blank' href="https://wa.me/+8801521574741">
+                        <IoLogoWhatsapp className='text-5xl hover:scale-105 duration-500 rounded-full border hover:shadow-2xl shadow border-gray-300 p-1'></IoLogoWhatsapp>
                     </a>
                 </div>
             </div>

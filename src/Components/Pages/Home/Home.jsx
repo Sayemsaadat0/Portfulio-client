@@ -11,6 +11,7 @@ import Banner from './Banner';
 import Certificate from './Certificate';
 import Experience from './Experience';
 import Address from './Address';
+import JobExperience from './JobExperience';
 
 const Home = () => {
     return (
@@ -25,7 +26,8 @@ const Home = () => {
                 <Educations></Educations>
                 <Skills></Skills>
                 <Projects></Projects>
-                <Contact></Contact>
+                {/* <Contact></Contact> */}
+                <JobExperience />
                 <SocialLinks></SocialLinks>
                 <Address />
             </div>
