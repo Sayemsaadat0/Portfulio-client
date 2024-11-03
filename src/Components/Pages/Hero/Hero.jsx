@@ -9,7 +9,7 @@ const Hero = () => {
                 <p className='flex justify-center md:justify-start'>
                     <Typewriter
                         options={{
-                            strings: ['Frontend', 'React', 'Fullstack', 'MERN Stack', 'Javascript'],
+                            strings: ['Frontend', 'React js', 'Next js', 'MERN Stack', 'Javascript'],
                             autoStart: true,
                             loop: true,
                         }}
@@ -19,7 +19,7 @@ const Hero = () => {
             </div>
 
             <div className=' py-3 group items-center justify-center '>
-                <a className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border  ' download={true} href="/resume.pdf">Download Resume
+                <a className='text-xs flex  bg-black text-white justify-center items-center gap-1  mt-3 rounded-full py-2 px-3 border  ' download={true} href="/Resume-of-Abu Saadat-Md-Sayem.pdf">Download Resume
                     <BsArrowRight className='group-hover:translate-x-2 duration-700'></BsArrowRight>
                 </a>
             </div>

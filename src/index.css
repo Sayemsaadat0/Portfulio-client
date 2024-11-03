@@ -8,10 +8,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 ::selection {
   background-color: black;
   color: white;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -25,7 +27,29 @@ a {
   transition: ease-in-out 8s;
 }
 
+.accounts {
+  height: 200px;
+  background-image: url("/Accounts.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 2s;
+}
+
+.inventory {
+  height: 200px;
+  background-image: url("/Inventory.png");
+  background-size: cover;
+  background-position: top;
+  transition: ease-in-out 2s;
+}
+
 .imageDiv:hover {
+  background-position: bottom;
+}
+.accounts:hover {
+  background-position: bottom;
+}
+.inventory:hover {
   background-position: bottom;
 }
 
@@ -43,9 +67,11 @@ a {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
+
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }

@@ -46,6 +46,57 @@ const Projects = () => {
                         </div>
                     </Link>
                 </SwiperSlide>
+                <SwiperSlide >
+                    <Link to={'https://saas.bamsbd.com/'} className='px-2'>
+                        <div className='accounts'>
+                        </div>
+                        <div className='overflow-y-auto scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin h-[200px] px-2'>
+                            <div className='py-2'>
+                                <p className='text-sm'>Accounts Management Solution</p>
+                            </div>
+                            <p className='text-sm text-justify py-4'>Tools : React, Node, Mysql,  Tailwind, shadcn</p>
+                            <p>Credential : </p>
+                            <p>Email : sayem@gmail.com</p>
+                            <p>Password : 12345</p>
+                            <p className='text-sm text-justify list-disc'>
+                                Features :
+                                <li> Easily record and track all your business expenses and income.</li>
+                                <li>Keep track of product stock, manage purchases from suppliers, and record sales.
+                                </li>
+                                <li>Create detailed reports on expenses, income, sales, and inventory, filter the data, and download reports in Excel
+                                    and PDF.</li>
+                            </p>
+                            <div className='flex justify-between'>
+                                <Buttons to={'https://saas.bamsbd.com/'} text={'Live Site'}></Buttons>
+                            </div>
+                        </div>
+                    </Link>
+                </SwiperSlide>
+                <SwiperSlide >
+                    <Link to={'https://inventory-client-rosy.vercel.app/'} className='px-2'>
+                        <div className='inventory'>
+                        </div>
+                        <div className='overflow-y-auto scrollbar-thumb-gray-300 scrollbar-track-gray-100 scrollbar-thin h-[200px] px-2'>
+                            <div className='py-2'>
+                                <p className='text-sm'>Inventory Management Solution</p>
+                            </div>
+                            <p className='text-sm text-justify py-4'>Tools :Typescript, React, Node, Mysql,  Tailwind, shadcn</p>
+                            <p>Credential : </p>
+                            <p>Email : admin@gmail.com</p>
+                            <p>Password : 123456</p>
+                            <p className='text-sm text-justify list-disc'>
+                                Features :
+                                <li> Easily record and track all your Products.</li>
+                                <li>Keep track of product stock, manage purchases from suppliers, and record Chalan.
+                                </li>
+                            </p>
+                            <div className='flex justify-between'>
+                                <Buttons to={'https://inventory-client-rosy.vercel.app/'} text={'Live Site'}></Buttons>
+                            </div>
+                        </div>
+                    </Link>
+                </SwiperSlide>
+
             </Swiper>
         </div>
     );
